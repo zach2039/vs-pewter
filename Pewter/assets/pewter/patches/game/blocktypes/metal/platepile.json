@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:blocktypes/metal/platepile.json",
+    "op": "addmerge",
+    "path": "/textures/pewter",
+    "value": { "base": "pewter:block/metal/ingot/pewter" }
+  }
+]

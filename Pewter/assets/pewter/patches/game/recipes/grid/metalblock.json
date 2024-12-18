@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:recipes/grid/metalblock.json",
+    "op": "addmerge",
+    "path": "/ingredients/G/skipVariants/-",
+    "value": "pewter"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "game:ingot-*",
+    "name": "metal",
+    "allowedVariants": [ "pewter" ]
+  },
+  "name": "crock",
+  "pattern": [
+    [
+      "_____",
+      "_###_",
+      "_###_",
+      "_###_",
+      "_____"
+    ],
+    [
+      "#####",
+      "#___#",
+      "#___#",
+      "#___#",
+      "#####"
+    ]
+  ],
+  "output": {
+    "type": "block",
+    "code": "pewter:crock-{metal}-east"
+  }
+}

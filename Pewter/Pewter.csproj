@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VSSurvivalMod">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSEssentials">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSCreativeMod">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="HarmonyLib">
+      <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\**">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Remove="assets\game\textures\block\metal\plate\pewter.png" />
+    <None Remove="assets\game\textures\item\resource\plate\pewter.png" />
+    <None Remove="assets\pewter\blocktypes\metal\candlelabra.json" />
+    <None Remove="assets\pewter\blocktypes\metal\candlelamp.json" />
+    <None Remove="assets\pewter\blocktypes\metal\crockbase.json" />
+    <None Remove="assets\pewter\itemtypes\part\crocklid.json" />
+    <None Remove="assets\pewter\patches\game\blocktypes\legacy\ingotpile.json" />
+    <None Remove="assets\pewter\patches\game\blocktypes\metal\platepile.json" />
+    <None Remove="assets\pewter\patches\game\itemtypes\resource\ingot.json" />
+    <None Remove="assets\pewter\recipes\smithing\bowl.json" />
+    <None Remove="assets\pewter\recipes\smithing\crock.json" />
+    <None Remove="assets\pewter\recipes\smithing\jug.json" />
+    <None Remove="assets\game\textures\block\metal\sheet\pewter.png" />
+    <None Remove="assets\pewter\blocktypes\metal\bowl-meal.json" />
+    <None Remove="assets\pewter\blocktypes\metal\bowl.json" />
+    <None Remove="assets\pewter\blocktypes\metal\crock.json" />
+    <None Remove="assets\pewter\blocktypes\metal\jug.json" />
+    <None Remove="assets\pewter\patches\game\blocktypes\metal\metalblock.json" />
+    <None Remove="assets\pewter\patches\game\itemtypes\resource\metalchain.json" />
+    <None Remove="assets\pewter\patches\game\itemtypes\resource\metallamellae.json" />
+    <None Remove="assets\pewter\patches\game\itemtypes\resource\metalscale.json" />
+    <None Remove="assets\pewter\patches\game\recipes\grid\metalblock.json" />
+    <None Remove="assets\pewter\patches\game\worldproperties\block\metal.json" />
+    <None Remove="assets\pewter\recipes\alloy\pewter.json" />
+    <None Remove="assets\pewter\shapes\block\metal\candlelabra-wall.json" />
+    <None Remove="assets\pewter\shapes\block\metal\jug.json" />
+    <None Remove="assets\pewter\textures\block\metal\plate\pewter.png" />
+    <None Remove="assets\pewter\textures\item\resource\plate\pewter.png" />
+    <Content Include="modinfo.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\pewter\itemtypes\part\" />
+    <Folder Include="assets\pewter\itemtypes\resource\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="assets\pewter\blocktypes\metal\crocklid.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

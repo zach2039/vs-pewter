@@ -1,0 +1,129 @@
+{
+  "code": "crocklid",
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "placeRemoveSound": "game:sounds/player/build",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.3125,
+          "z2": 1
+        }
+      }
+    },
+    {
+      "name": "Unplaceable",
+      "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+    },
+    { "name": "RightClickPickup" }
+  ],
+  "heldTpIdleAnimation": "holdbothhands",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [ "pewter" ]
+    }
+  ],
+  "attributes": {
+    "tempGlowMode": 1
+  },
+  "shape": {
+    "base": "pewter:block/metal/crock/crocklid"
+  },
+  "doNotRenderAtLod2": true,
+  "blockmaterial": "Metal",
+  "creativeinventory": {
+    "general": [ "crocklid-pewter" ],
+    "decorative": [ "crocklid-pewter" ]
+  },
+  "replaceable": 400,
+  "resistance": 1.5,
+  "maxStackSizeByType": {
+    "*": 8
+  },
+  "lightAbsorption": 0,
+  "textures": {
+    "mat": { "base": "game:block/metal/ingot/{metal}" }
+  },
+  "sounds": {
+    "walk": "game:walk/metal"
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "emitsideao": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.25,
+    "y1": 0,
+    "z1": 0.25,
+    "x2": 0.75,
+    "y2": 0.3125,
+    "z2": 0.75
+  },
+  "selectionbox": {
+    "x1": 0.25,
+    "y1": 0,
+    "z1": 0.25,
+    "x2": 0.75,
+    "y2": 0.3125,
+    "z2": 0.75
+  },
+  "guiTransform": {
+    "rotation": {
+      "x": -22.6,
+      "y": -125,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.18,
+      "z": 0.5
+    },
+    "scale": 3.09
+  },
+  "groundTransform": {
+    "scale": 3
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0.5
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 2
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.56,
+      "y": -0.03,
+      "z": -0.52
+    },
+    "rotation": {
+      "x": -139,
+      "y": -21,
+      "z": -118
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.01,
+      "z": 0.5
+    },
+    "scale": 0.81
+  }
+}

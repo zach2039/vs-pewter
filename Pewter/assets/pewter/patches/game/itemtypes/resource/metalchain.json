@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:itemtypes/resource/metalscale.json",
+    "op": "addmerge",
+    "path": "/skipVariants/-",
+    "value": "*-pewter"
+  }
+]

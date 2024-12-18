@@ -1,0 +1,15 @@
+{
+  "game:item-ingot-pewter": "Pewter ingot",
+  "game:item-metalplate-pewter": "Pewter plate",
+  "game:item-metalbit-pewter": "Pewter bits",
+  "game:block-metalsheet-pewter-*": "Pewter sheet",
+
+  "pewter:block-candlelamp-*": "Pewter candle lamp",
+  "pewter:block-candlelabra-*": "Pewter candlelabra",
+  "pewter:block-crock-pewter-*": "Pewter crock",
+  "pewter:block-crocklid-pewter": "Pewter crock lid",
+  "pewter:block-crockbase-pewter": "Pewter crock base",
+  "pewter:block-jug-pewter": "Pewter jug",
+  "pewter:block-bowl-pewter": "Pewter bowl",
+  "pewter:block-bowl-meal-pewter": "Pewter bowl with Meal"
+}

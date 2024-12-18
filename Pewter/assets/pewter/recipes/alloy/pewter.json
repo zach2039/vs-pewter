@@ -1,0 +1,26 @@
+{
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "game:ingot-tin",
+      "minratio": 0.85,
+      "maxratio": 0.95
+    },
+    {
+      "type": "item",
+      "code": "game:ingot-lead",
+      "minratio": 0.05,
+      "maxratio": 0.10
+    },
+    {
+      "type": "item",
+      "code": "game:ingot-copper",
+      "minratio": 0.0,
+      "maxratio": 0.05
+    }
+  ],
+  "output": {
+    "type": "item",
+    "code": "game:ingot-pewter"
+  }
+}

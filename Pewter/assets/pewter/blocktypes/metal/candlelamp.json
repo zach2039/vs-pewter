@@ -1,0 +1,316 @@
+{
+  "code": "candlelamp",
+  "class": "BlockTorch",
+  "behaviorsByType": {
+    "*-up": [
+      { "name": "Lockable" },
+      {
+        "name": "UnstableFalling",
+        "properties": {
+          "ignorePlaceTest": true,
+          "attachmentArea": {
+            "x1": 5,
+            "y1": 15,
+            "z1": 5,
+            "x2": 10,
+            "y2": 16,
+            "z2": 10
+          }
+        }
+      },
+      { "name": "RightClickPickup" }
+    ],
+    "*": [
+      { "name": "Lockable" },
+      { "name": "RightClickPickup" }
+    ]
+  },
+  "variantgroups": [
+    {
+      "code": "orientation",
+      "states": [ "up" ],
+      "combine": "add"
+    },
+    {
+      "code": "orientation",
+      "loadFromProperties": "abstract/horizontalorientation"
+    }
+  ],
+  "shapebytype": {
+    "*-up": { "base": "pewter:block/metal/bowl-ground-candle" },
+    "*-north": {
+      "base": "pewter:block/metal/bowl-wall-candle",
+      "rotateY": 0
+    },
+    "*-east": {
+      "base": "pewter:block/metal/bowl-wall-candle",
+      "rotateY": 270
+    },
+    "*-south": {
+      "base": "pewter:block/metal/bowl-wall-candle",
+      "rotateY": 180
+    },
+    "*-west": {
+      "base": "pewter:block/metal/bowl-wall-candle",
+      "rotateY": 90
+    }
+  },
+  "textures": {
+  },
+  "attributes": {
+    "reinforcable": true,
+    "attachmentAreas": {
+      "down": {
+        "x1": 5,
+        "y1": 0,
+        "z1": 5,
+        "x2": 10,
+        "y2": 0,
+        "z2": 10
+      },
+      "north": {
+        "x1": 7,
+        "y1": 6,
+        "z1": 15,
+        "x2": 8,
+        "y2": 7,
+        "z2": 15,
+        "rotateY": 180
+      },
+      "east": {
+        "x1": 7,
+        "y1": 6,
+        "z1": 15,
+        "x2": 8,
+        "y2": 7,
+        "z2": 15,
+        "rotateY": 270
+      },
+      "south": {
+        "x1": 7,
+        "y1": 6,
+        "z1": 15,
+        "x2": 8,
+        "y2": 7,
+        "z2": 15,
+        "rotateY": 0
+      },
+      "west": {
+        "x1": 7,
+        "y1": 6,
+        "z1": 15,
+        "x2": 8,
+        "y2": 7,
+        "z2": 15,
+        "rotateY": 90
+      }
+    }
+  },
+  "storageFlags": 257,
+  "doNotRenderAtLod2": true,
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "sounds": {
+    "hit": "game:block/anvil",
+    "break": "game:block/anvil",
+    "place": "game:block/anvil"
+  },
+  "heldRightReadyAnimationByType": {
+    "*": "holdinglanternrighthand"
+  },
+  "creativeinventory": {
+    "general": [ "*-up" ],
+    "decorative": [ "*-up" ]
+  },
+  "replaceable": 5001,
+  "resistance": 0.5,
+  "maxStackSize": 8,
+  "lightAbsorption": 0,
+  "lightHsv": [ 7, 7, 11 ],
+  "particleProperties": [
+    {
+      "__comment": "Fire quads",
+      "hsvaColor": [
+        {
+          "avg": 20,
+          "var": 20
+        },
+        {
+          "avg": 255,
+          "var": 50
+        },
+        {
+          "avg": 255,
+          "var": 50
+        },
+        {
+          "avg": 255,
+          "var": 0
+        }
+      ],
+      "opacityEvolve": {
+        "transform": "quadratic",
+        "factor": -16
+      },
+      "gravityEffect": {
+        "avg": 0,
+        "var": 0
+      },
+      "velocity": [
+        {
+          "avg": 0,
+          "var": 0.0
+        },
+        {
+          "avg": 0.03,
+          "var": 0.01
+        },
+        {
+          "avg": 0,
+          "var": 0.0
+        }
+      ],
+      "quantity": { "avg": 0.1 },
+      "size": {
+        "avg": 0.05,
+        "var": 0.025
+      },
+      "lifeLength": { "avg": 0.5 },
+      "sizeEvolve": {
+        "transform": "linear",
+        "factor": 0.1
+      },
+      "posOffset": [
+        {
+          "avg": 0.0,
+          "var": 0.05
+        },
+        {
+          "avg": 0.20,
+          "var": 0
+        },
+        {
+          "avg": 0.0,
+          "var": 0.05
+        }
+      ],
+      "particleModel": "Quad",
+      "vertexFlags": 128,
+      "windAffectednes": 0.05
+    }
+  ],
+  "collisionbox": null,
+  "selectionboxbytype": {
+    "*-up": {
+      "x1": 0.3125,
+      "y1": 0,
+      "z1": 0.3125,
+      "x2": 0.6875,
+      "y2": 0.125,
+      "z2": 0.6875
+    },
+    "*-east": {
+      "x1": 0.3125,
+      "y1": 0.3125,
+      "z1": 0.5625,
+      "x2": 0.6875,
+      "y2": 0.5,
+      "z2": 1,
+      "rotateY": 270
+    },
+    "*-south": {
+      "x1": 0.3125,
+      "y1": 0.3125,
+      "z1": 0.5625,
+      "x2": 0.6875,
+      "y2": 0.5,
+      "z2": 1,
+      "rotateY": 180
+    },
+    "*-west": {
+      "x1": 0.3125,
+      "y1": 0.3125,
+      "z1": 0.5625,
+      "x2": 0.6875,
+      "y2": 0.5,
+      "z2": 1,
+      "rotateY": 90
+    },
+    "*-north": {
+      "x1": 0.3125,
+      "y1": 0.3125,
+      "z1": 0.5625,
+      "x2": 0.6875,
+      "y2": 0.5,
+      "z2": 1,
+      "rotateY": 0
+    }
+  },
+  "blockmaterial": "Other",
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.29,
+      "y": -0.1,
+      "z": 0
+    },
+    "scale": 2
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 4,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.0625,
+      "z": 0.5
+    },
+    "scale": 3
+  },
+  "groundTransform": {
+    "scale": 2.5
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.84,
+      "y": -0.16,
+      "z": -0.59
+    },
+    "rotation": {
+      "x": -115,
+      "y": 0,
+      "z": -89
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.1,
+      "z": 0.5
+    },
+    "scale": 0.66
+  },
+  "tpOffHandTransform": {
+    "translation": {
+      "x": -0.92,
+      "y": -0.26,
+      "z": -0.97
+    },
+    "rotation": {
+      "x": -62,
+      "y": 0,
+      "z": -89
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.1,
+      "z": 0.5
+    },
+    "scale": 0.66
+  },
+  "rainPermeable": true,
+  "materialDensity": 600
+}
