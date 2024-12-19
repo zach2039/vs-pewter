@@ -31,9 +31,33 @@ namespace Pewter.ModBlock
             }
         }
 
+        internal void initRotations()
+        {
+            for (int i = 0; i < 17; i++)
+            {
+                Matrixf j = new Matrixf();
+                j.Translate(0.5f, 0.5f, 0.5f);
+                j.RotateYDeg((float)(i * 22.5));
+                j.Translate(-0.5f, -0.5f, -0.5f);
+                Vec3f[] poses = this.candleWickPositionsByRot[i] = new Vec3f[this.candleWickPositions.Length];
+                for (int k = 0; k < poses.Length; k++)
+                {
+                    Vec4f rotated = j.TransformVector(new Vec4f(this.candleWickPositions[k].X / 16f, this.candleWickPositions[k].Y / 16f, this.candleWickPositions[k].Z / 16f, 1f));
+                    poses[k] = new Vec3f(rotated.X, rotated.Y, rotated.Z);
+                }
+            }
+        }
+
         public override void OnLoaded(ICoreAPI api)
         {
             base.OnLoaded(api);
+            this.initRotations();
+        }
+
+        public override bool ShouldReceiveClientParticleTicks(IWorldAccessor world, IPlayer player, BlockPos pos, out bool isWindAffected)
+        {
+            isWindAffected = true;
+            return true;
         }
 
         public override string GetHeldTpIdleAnimation(ItemSlot activeHotbarSlot, Entity forEntity, EnumHand hand)
@@ -186,6 +210,79 @@ namespace Pewter.ModBlock
             }
 
             return false;
+        }
+
+        public override void OnAsyncClientParticleTick(IAsyncParticleManager manager, BlockPos pos, float windAffectednessAtPos, float secondsTicking)
+        {
+            if (this.ParticleProperties != null && this.ParticleProperties.Length != 0)
+            {
+                string orientation = this.Variant["orientation"];
+                if (orientation == "up")
+                {
+                    float meshAngle = 0.0f;
+                    BlockEntityCandlelabra be = manager.BlockAccess.GetBlockEntity(pos) as BlockEntityCandlelabra;
+                    if (be != null)
+                    {
+                        meshAngle = be.MeshAngle;
+                    }
+                    int rotIdx = (int)Math.Round((meshAngle + Math.PI) / 0.3926991f);
+                    Vec3f[] poses = this.candleWickPositionsByRot[rotIdx];
+                    for (int i = 0; i < this.ParticleProperties.Length; i++)
+                    {
+                        AdvancedParticleProperties bps = this.ParticleProperties[i];
+                        bps.WindAffectednesAtPos = windAffectednessAtPos;
+                        for (int j = 0; j < 3; j++)
+                        {
+                            Vec3f dp = poses[j];
+                            bps.basePos.X = (double)((float)pos.X + dp.X);
+                            bps.basePos.Y = (double)((float)pos.Y + dp.Y);
+                            bps.basePos.Z = (double)((float)pos.Z + dp.Z);
+                            manager.Spawn(bps);
+                        }
+                    }
+                }
+                else 
+                {
+                    // Fun with particles
+                    float xOff = 0f;
+                    float yOff = 0.1f;
+                    float zOff = 0f;
+                    int rot = 0;
+                    switch (BlockFacing.FromCode(orientation).HorizontalAngleIndex)
+                    {
+                        case 0:
+                            rot = 4;
+                            xOff -= 0.25f;
+                            break;
+                        case 1:
+                            zOff += 0.25f;
+                            break;
+                        case 2:
+                            rot = 4;
+                            xOff += 0.25f;
+                            break;
+                        case 3:
+                            zOff -= 0.25f;
+                            break;
+                        default:
+                            break;
+                    }
+                    for (int i = 0; i < this.ParticleProperties.Length; i++)
+                    {
+                        AdvancedParticleProperties bps = this.ParticleProperties[i];
+                        bps.WindAffectednesAtPos = windAffectednessAtPos;
+                        Vec3f[] poses = this.candleWickPositionsByRot[rot];
+                        for (int j = 0; j < 3; j++)
+                        {
+                            Vec3f dp = poses[j];
+                            bps.basePos.X = (double)((float)pos.X + dp.X + xOff);
+                            bps.basePos.Y = (double)((float)pos.Y + dp.Y + yOff);
+                            bps.basePos.Z = (double)((float)pos.Z + dp.Z + zOff);
+                            manager.Spawn(bps);
+                        }
+                    }
+                }  
+            }
         }
 
         public override ItemStack OnPickBlock(IWorldAccessor world, BlockPos pos)
@@ -355,6 +452,15 @@ namespace Pewter.ModBlock
             }
             return stacks;
         }
+
+        protected Vec3f[] candleWickPositions = new Vec3f[]
+        {
+            new Vec3f(2.5f, 8f, 8f),
+            new Vec3f(8f, 11f, 8f),
+            new Vec3f(13.5f, 8f, 8f),
+        };
+
+        protected Vec3f[][] candleWickPositionsByRot = new Vec3f[17][];
 
         private string curMat;
 

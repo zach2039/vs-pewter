@@ -39,6 +39,7 @@
     </Content>
     <None Remove="assets\game\textures\block\metal\plate\pewter.png" />
     <None Remove="assets\game\textures\item\resource\plate\pewter.png" />
+    <None Remove="assets\pewter\blocktypes\clay\mold\tablewaremold.json" />
     <None Remove="assets\pewter\blocktypes\metal\candlelabra.json" />
     <None Remove="assets\pewter\blocktypes\metal\candlelamp.json" />
     <None Remove="assets\pewter\blocktypes\metal\crockbase.json" />
@@ -61,6 +62,7 @@
     <None Remove="assets\pewter\patches\game\recipes\grid\metalblock.json" />
     <None Remove="assets\pewter\patches\game\worldproperties\block\metal.json" />
     <None Remove="assets\pewter\recipes\alloy\pewter.json" />
+    <None Remove="assets\pewter\shapes\block\clay\mold\bowl.json" />
     <None Remove="assets\pewter\shapes\block\metal\candlelabra-wall.json" />
     <None Remove="assets\pewter\shapes\block\metal\jug.json" />
     <None Remove="assets\pewter\textures\block\metal\plate\pewter.png" />

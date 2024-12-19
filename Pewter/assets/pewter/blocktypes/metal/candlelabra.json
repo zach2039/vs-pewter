@@ -95,6 +95,78 @@
   },
   "replaceable": 500,
   "resistance": 1,
+  "particleProperties": [
+    {
+      "__comment": "Fire quads",
+      "hsvaColor": [
+        {
+          "avg": 20,
+          "var": 20
+        },
+        {
+          "avg": 255,
+          "var": 50
+        },
+        {
+          "avg": 255,
+          "var": 50
+        },
+        {
+          "avg": 255,
+          "var": 0
+        }
+      ],
+      "opacityEvolve": {
+        "transform": "quadratic",
+        "factor": -16
+      },
+      "gravityEffect": {
+        "avg": 0,
+        "var": 0
+      },
+      "velocity": [
+        {
+          "avg": 0,
+          "var": 0.0
+        },
+        {
+          "avg": 0.03,
+          "var": 0.01
+        },
+        {
+          "avg": 0,
+          "var": 0.0
+        }
+      ],
+      "quantity": { "avg": 0.1 },
+      "size": {
+        "avg": 0.05,
+        "var": 0.025
+      },
+      "lifeLength": { "avg": 0.5 },
+      "sizeEvolve": {
+        "transform": "linear",
+        "factor": 0.1
+      },
+      "posOffset": [
+        {
+          "avg": 0.0,
+          "var": 0.05
+        },
+        {
+          "avg": 0.20,
+          "var": 0
+        },
+        {
+          "avg": 0.0,
+          "var": 0.05
+        }
+      ],
+      "particleModel": "Quad",
+      "vertexFlags": 128,
+      "windAffectednes": 0.05
+    }
+  ],
   "fpHandTransform": {
     "translation": {
       "x": 0.29,
@@ -106,7 +178,7 @@
   "guiTransform": {
     "origin": {
       "x": 0.5,
-      "y": 0.1,
+      "y": 0.4,
       "z": 0.5
     },
     "scale": 1.5

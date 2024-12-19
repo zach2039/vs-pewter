@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"pewter": "block/metal/ingot/pewter"
+		"pewter": "pewter:block/metal/ingot/pewter"
 	},
 	"elements": [
 		{

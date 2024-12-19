@@ -1,0 +1,234 @@
+{
+	"code": "tablewaremold",
+	"classByType": {
+		"*-raw-*": "Block",
+		"*-burned-*": "BlockToolMold"
+	},
+	"behaviorsByType": {
+		"*-raw-*": [
+			{
+				"name": "GroundStorable",
+				"properties": {
+					"layout": "SingleCenter"
+				}
+			},
+			{
+				"name": "Unplaceable",
+				"__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+			},
+			{
+				"name": "RightClickPickup"
+			}
+		],
+		"*": [
+			{
+				"name": "UnstableFalling"
+			}
+		]
+	},
+	"variantgroups": [
+		{
+			"code": "materialtype",
+			"states": [
+				"raw",
+				"burned"
+			]
+		},
+		{
+			"code": "itemtype",
+			"states": [
+				"bowl",
+				"crockbase",
+				"crocklid"
+			]
+		},
+		{
+			"code": "side",
+			"loadFromProperties": "game:abstract/horizontalorientation"
+		}
+	],
+	"attributes": {
+		"reinforcable": true,
+		"shatteredShape": { "base": "game:block/clay/mold/shattered-ingot" }
+	},
+	"attributesByType": {
+		"tablewaremold-burned-bowl": {
+			"requiredUnits": 100,
+			"fillHeight": 3,
+			"drop": {
+				"type": "item",
+				"code": "pewter:bowl-{metal}",
+				"quantity": 2
+			}
+		},
+		"tablewaremold-burned-crockbase": {
+			"requiredUnits": 100,
+			"fillHeight": 3,
+			"drop": {
+				"type": "item",
+				"code": "pewter:crockbase-{metal}",
+				"quantity": 2
+			}
+		},
+		"tablewaremold-burned-crocklid": {
+			"requiredUnits": 100,
+			"fillHeight": 2,
+			"drop": {
+				"type": "item",
+				"code": "pewter:crockbase-{metal}",
+				"quantity": 4
+			}
+		}
+	},
+	"entityClassByType": {
+		"tablewaremold-burned-*": "ToolMold"
+	},
+	"combustiblePropsByType": {
+		"tablewaremold-raw-*": {
+			"meltingPoint": 650,
+			"meltingDuration": 45,
+			"smeltedRatio": 1,
+			"smeltingType": "fire",
+			"smeltedStack": {
+				"type": "block",
+				"code": "pewter:tablewaremold-burned-{tooltype}-{side}"
+			},
+			"requiresContainer": false
+		}
+	},
+	"blockmaterial": "Ceramic",
+	"creativeinventory": {
+		"general": [ "*-north" ],
+		"construction": [ "*-north" ]
+	},
+	"replaceable": 700,
+	"resistance": 1.5,
+	"maxStackSize": 8,
+	"lightAbsorption": 0,
+	"texturesByType": {
+		"tablewaremold-raw-*": { "all": { "base": "game:block/clay/blueclay" } },
+		"tablewaremold-burned-*": {
+			"floor": { "base": "game:block/clay/ceramic-dark" },
+			"other": { "base": "game:block/clay/ceramic" }
+		}
+	},
+	"shapeByType": {
+		"*-north": {
+			"base": "pewter:block/clay/mold/{tooltype}",
+			"rotateY": 90
+		},
+		"*-east": {
+			"base": "pewter:block/clay/mold/{tooltype}",
+			"rotateY": 0
+		},
+		"*-south": {
+			"base": "pewter:block/clay/mold/{tooltype}",
+			"rotateY": 270
+		},
+		"*-west": {
+			"base": "pewter:block/clay/mold/{tooltype}",
+			"rotateY": 180
+		}
+	},
+	"sounds": {
+		"walk": "game:walk/stone"
+	},
+	"collisionboxByType": {
+		"*": {
+			"x1": 0.0625,
+			"y1": 0,
+			"z1": 0.0625,
+			"x2": 0.9375,
+			"y2": 0.125,
+			"z2": 0.9375
+		}
+	},
+	"selectionboxByType": {
+		"*": {
+			"x1": 0.0625,
+			"y1": 0,
+			"z1": 0.0625,
+			"x2": 0.9375,
+			"y2": 0.125,
+			"z2": 0.9375
+		}
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"sidesolid": {
+		"all": false
+	},
+	"guiTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.0625,
+				"z": 0.5
+			},
+			"scale": 1.33
+		}
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": -1,
+				"y": 0.2,
+				"z": -0.9
+			},
+			"rotation": {
+				"x": -87,
+				"y": 9,
+				"z": 4
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.125,
+				"z": 0.5
+			},
+			"scale": 0.5
+		}
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": 0.5
+			},
+			"rotation": {
+				"x": 16,
+				"y": -51,
+				"z": 91
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.125,
+				"z": 0.5
+			}
+		}
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": -45,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 2.2
+	}
+}
