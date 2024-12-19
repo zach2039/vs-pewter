@@ -6,7 +6,7 @@
         "Zach2039"
     ],
     "description": "Adds leaded pewter and associated craftables",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "game": "*"
     }
