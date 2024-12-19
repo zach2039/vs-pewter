@@ -43,13 +43,20 @@
     <None Remove="assets\pewter\blocktypes\metal\candlelabra.json" />
     <None Remove="assets\pewter\blocktypes\metal\candlelamp.json" />
     <None Remove="assets\pewter\blocktypes\metal\crockbase.json" />
-    <None Remove="assets\pewter\itemtypes\part\crocklid.json" />
     <None Remove="assets\pewter\patches\game\blocktypes\legacy\ingotpile.json" />
     <None Remove="assets\pewter\patches\game\blocktypes\metal\platepile.json" />
+    <None Remove="assets\pewter\patches\game\itemtypes\part\rod.json" />
     <None Remove="assets\pewter\patches\game\itemtypes\resource\ingot.json" />
-    <None Remove="assets\pewter\recipes\smithing\bowl.json" />
-    <None Remove="assets\pewter\recipes\smithing\crock.json" />
-    <None Remove="assets\pewter\recipes\smithing\jug.json" />
+    <None Remove="assets\pewter\patches\game\itemtypes\resource\metalbit.json" />
+    <None Remove="assets\pewter\patches\game\recipes\smithing\plate.json" />
+    <None Remove="assets\pewter\patches\game\recipes\smithing\rod.json" />
+    <None Remove="assets\pewter\recipes\clayforming\bowlmold.json" />
+    <None Remove="assets\pewter\recipes\clayforming\crockbasemold.json" />
+    <None Remove="assets\pewter\recipes\clayforming\crocklidmold.json" />
+    <None Remove="assets\pewter\recipes\clayforming\jugmold.json" />
+    <None Remove="assets\pewter\recipes\grid\candlelabra.json" />
+    <None Remove="assets\pewter\recipes\grid\candlelamp.json" />
+    <None Remove="assets\pewter\recipes\grid\metalcrock.json" />
     <None Remove="assets\game\textures\block\metal\sheet\pewter.png" />
     <None Remove="assets\pewter\blocktypes\metal\bowl-meal.json" />
     <None Remove="assets\pewter\blocktypes\metal\bowl.json" />
@@ -62,7 +69,9 @@
     <None Remove="assets\pewter\patches\game\recipes\grid\metalblock.json" />
     <None Remove="assets\pewter\patches\game\worldproperties\block\metal.json" />
     <None Remove="assets\pewter\recipes\alloy\pewter.json" />
+    <None Remove="assets\pewter\recipes\grid\sealedmetalcrock.json" />
     <None Remove="assets\pewter\shapes\block\clay\mold\bowl.json" />
+    <None Remove="assets\pewter\shapes\block\clay\mold\jug.json" />
     <None Remove="assets\pewter\shapes\block\metal\candlelabra-wall.json" />
     <None Remove="assets\pewter\shapes\block\metal\jug.json" />
     <None Remove="assets\pewter\textures\block\metal\plate\pewter.png" />
@@ -70,11 +79,6 @@
     <Content Include="modinfo.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="assets\pewter\itemtypes\part\" />
-    <Folder Include="assets\pewter\itemtypes\resource\" />
   </ItemGroup>
 
   <ItemGroup>

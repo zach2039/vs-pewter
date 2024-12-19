@@ -42,7 +42,15 @@
       "mealContainer": true,
       "mealBlockCode": "pewter:bowl-meal-pewter",
       "servingCapacity": 1,
-      "bowlContents": null
+      "bowlContents": null,
+      "handbook": {
+        "extraSections": [
+          {
+            "title": "pewter:handbooktitle-bowl",
+            "text": "pewter:handbooktext-bowl"
+          }
+        ]
+      }
     }
   },
   "shape": {

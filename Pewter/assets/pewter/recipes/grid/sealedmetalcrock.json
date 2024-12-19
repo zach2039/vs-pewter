@@ -1,0 +1,46 @@
+[
+  {
+    "__comment": "This recipe looks odd, because the sealing happens in code in BlockCrock.cs",
+    "ingredientPattern": "C,F",
+    "ingredients": {
+      "C": {
+        "type": "block",
+        "code": "pewter:crock-pewter-east"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:fat"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "pewter:crock-pewter-east",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "C,F",
+    "ingredients": {
+      "C": {
+        "type": "block",
+        "code": "pewter:crock-pewter-east"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:beeswax"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "pewter:crock-pewter-east",
+      "quantity": 1
+    }
+  }
+
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "game:itemtypes/resource/ingot.json",
+    "op": "addmerge",
+    "path": "/materialDensityByType/*-pewter",
+    "value": 9000
+  },
+  {
+    "file": "game:itemtypes/resource/ingot.json",
+    "op": "addmerge",
+    "path": "/combustiblePropsByType/ingot-pewter",
+    "value": {
+      "meltingPoint": 232,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltedStack": {
+        "type": "item",
+        "code": "game:ingot-pewter"
+      }
+    }
+  }
+]

@@ -48,7 +48,15 @@
       "bowlContents": null,
       "handleLiquidContainerInteract": true,
       "handleCookingContainerInteract": true,
-      "emptiedBlockCode": "pewter:crock-pewter-{side}"
+      "emptiedBlockCode": "pewter:crock-pewter-{side}",
+      "handbook": {
+        "extraSections": [
+          {
+            "title": "pewter:handbooktitle-crock",
+            "text": "pewter:handbooktext-crock"
+          }
+        ]
+      }
     }
   },
   "shapeByType": {

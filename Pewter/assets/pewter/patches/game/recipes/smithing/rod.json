@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:recipes/smithing/rod.json",
+    "op": "addmerge",
+    "path": "/ingredient/allowedVariants/-",
+    "value": "pewter"
+  }
+]

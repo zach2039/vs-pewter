@@ -1,0 +1,36 @@
+{
+  "ingredientPattern": "_L_,LRL,IPS",
+  "ingredients": {
+    "L": {
+      "type": "block",
+      "code": "pewter:candlelamp-up"
+    },
+    "R": {
+      "type": "item",
+      "code": "game:rod-pewter"
+    },
+    "P": {
+      "type": "item",
+      "code": "game:metalplate-pewter"
+    },
+    "S": {
+      "type": "item",
+      "code": "game:solderbar-*",
+      "quantity": 2,
+      "name": "mat",
+      "allowedVariants": [ "tin", "silver" ]
+    },
+    "I": {
+      "type": "item",
+      "code": "game:solderingiron",
+      "isTool": true,
+      "toolDurabilityCost": 3
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "output": {
+    "type": "block",
+    "code": "pewter:candlelabra-up"
+  }
+}

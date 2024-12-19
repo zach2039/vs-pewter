@@ -3,7 +3,7 @@
     {
       "type": "item",
       "code": "game:ingot-tin",
-      "minratio": 0.85,
+      "minratio": 0.80,
       "maxratio": 0.95
     },
     {
@@ -15,7 +15,7 @@
     {
       "type": "item",
       "code": "game:ingot-copper",
-      "minratio": 0.0,
+      "minratio": 0.01,
       "maxratio": 0.05
     }
   ],

@@ -49,13 +49,7 @@
     "*-up": {
       "handbook": {
         "include": true,
-        "groupBy": [ "candlelabra-*" ],
-        "extraSections": [
-          {
-            "title": "candlelabra-handbook-help-title",
-            "text": "candlelabra-handbook-help-text"
-          }
-        ]
+        "groupBy": [ "candlelabra-*" ]
       }
     },
     "*": {
