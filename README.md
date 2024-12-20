@@ -16,10 +16,10 @@ Items added that can be made of pewter are:
   - Holds 6 servings instead of 4. Must be assembled from parts casted separately.
 - Bowls
 - Jugs
-  - Holds 5 liters instead of 3
+  - Holds 5 liters instead of 3.
 - Candle lamp
   - Similar to oil lamps, created with a pewter bowl and candle.
-- Candlelabra
+- Candelabra
   - Provides light level of 14 and can be placed on walls and floors.
   
 
@@ -32,4 +32,4 @@ Future Plans
 Known Issues
 --------
 
-* None found thus far.
+* None, yet. Please post any bugs found [here](https://github.com/zach2039/vs-pewter/issues).
