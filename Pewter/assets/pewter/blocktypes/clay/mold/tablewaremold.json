@@ -79,21 +79,13 @@
       ]
     },
     "@tablewaremold-burned-crockbase-(east|west)": {
-      "requiredUnits": 100,
+      "requiredUnits": 200,
       "fillHeight": 2,
       "drop": {
         "type": "block",
         "code": "pewter:crockbase-{metal}",
-        "quantity": 2
-      },
-      "fillQuadsByLevel": [
-        {
-          "x1": 2,
-          "z1": 5,
-          "x2": 14,
-          "z2": 10
-        }
-      ]
+        "quantity": 4
+      }
     },
     "tablewaremold-burned-crocklid-*": {
       "requiredUnits": 100,
@@ -196,6 +188,12 @@
       "other": { "base": "game:block/clay/ceramic" }
     }
   },
+  "heldTpIdleAnimationByType": {
+    "tablewaremold-*-jug-*": "holdbothhands"
+  },
+  "heldTpUseAnimationByType": {
+    "tablewaremold-*-jug-*": "twohandplaceblock"
+  },
   "shapeByType": {
     "*-north": {
       "base": "pewter:block/clay/mold/{itemtype}",
@@ -218,6 +216,22 @@
     "walk": "game:walk/stone"
   },
   "collisionboxByType": {
+    "tablewaremold-*-jug-*": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 0.50,
+      "z2": 0.75
+    },
+    "tablewaremold-*-crockbase-*": {
+      "x1": 0.0625,
+      "y1": 0,
+      "z1": 0.0625,
+      "x2": 0.9375,
+      "y2": 0.20,
+      "z2": 0.9375
+    },
     "*": {
       "x1": 0.0625,
       "y1": 0,
@@ -228,6 +242,22 @@
     }
   },
   "selectionboxByType": {
+    "tablewaremold-*-jug-*": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 0.50,
+      "z2": 0.75
+    },
+    "tablewaremold-*-crockbase-*": {
+      "x1": 0.0625,
+      "y1": 0,
+      "z1": 0.0625,
+      "x2": 0.9375,
+      "y2": 0.20,
+      "z2": 0.9375
+    },
     "*": {
       "x1": 0.0625,
       "y1": 0,
@@ -244,6 +274,19 @@
     "all": false
   },
   "guiTransformByType": {
+    "tablewaremold-*-jug-*": {
+      "translation": {
+        "x": 0,
+        "y": 6,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.0625,
+        "z": 0.5
+      },
+      "scale": 1.33
+    },
     "*": {
       "translation": {
         "x": 0,
@@ -259,6 +302,24 @@
     }
   },
   "tpHandTransformByType": {
+    "tablewaremold-*-jug-*": {
+      "translation": {
+        "x": -0.65,
+        "y": -0.3,
+        "z": -0.65
+      },
+      "rotation": {
+        "x": -87,
+        "y": 9,
+        "z": -87
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.125,
+        "z": 0.5
+      },
+      "scale": 0.77
+    },
     "*": {
       "translation": {
         "x": -1,
