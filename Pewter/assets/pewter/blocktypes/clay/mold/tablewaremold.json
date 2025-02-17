@@ -57,7 +57,7 @@
       "fillHeight": 1,
       "drop": {
         "type": "block",
-        "code": "pewter:bowl-pewter",
+        "code": "pewter:bowl-{metal}",
         "quantity": 4
       }
     },

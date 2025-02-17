@@ -1,24 +1,62 @@
-{
-  "ingredientPattern": "BL",
-  "ingredients": {
-    "B": {
-      "type": "block",
-      "code": "pewter:crockbase-*",
-      "name": "metal",
-      "allowedVariants": [ "pewter" ]
+[
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "pewter:crockbase-pewter"
+      },
+      "L": {
+        "type": "block",
+        "code": "pewter:crocklid-pewter"
+      }
     },
-    "L": {
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
       "type": "block",
-      "code": "pewter:crocklid-*",
-      "name": "metal",
-      "allowedVariants": [ "pewter" ]
+      "code": "pewter:crock-pewter-east"
     }
   },
-  "width": 2,
-  "height": 1,
-  "shapeless": true,
-  "output": {
-    "type": "block",
-    "code": "pewter:crock-{metal}-east"
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "pewter:crockbase-silver"
+      },
+      "L": {
+        "type": "block",
+        "code": "pewter:crocklid-silver"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "pewter:crock-silver-east"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "pewter:crockbase-gold"
+      },
+      "L": {
+        "type": "block",
+        "code": "pewter:crocklid-gold"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "pewter:crock-gold-east"
+    }
   }
-}
+]

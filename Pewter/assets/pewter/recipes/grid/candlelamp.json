@@ -3,7 +3,9 @@
   "ingredients": {
     "B": {
       "type": "block",
-      "code": "pewter:bowl-pewter"
+      "code": "pewter:bowl-*",
+      "name": "metal",
+      "allowedVariants": [ "pewter", "silver", "gold" ]
     },
     "F": {
       "type": "item",
@@ -15,6 +17,6 @@
   "shapeless": true,
   "output": {
     "type": "block",
-    "code": "pewter:candlelamp-up"
+    "code": "pewter:candlelamp-{metal}-up"
   }
 }

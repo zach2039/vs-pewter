@@ -4,12 +4,12 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter" ]
+      "states": [ "pewter", "silver", "gold" ]
     }
   ],
   "shape": { "base": "pewter:block/metal/jug" },
-  "texturesByType": {
-    "*": { "all": { "base": "pewter:block/metal/ingot/{metal}" } }
+  "textures": {
+    "all": { "base": "game:block/metal/ingot/{metal}" }
   },
   "behaviors": [
     {
@@ -51,7 +51,7 @@
     },
     "shelvable": true,
     "liquidContainerPropsByType": {
-      "*-pewter": {
+      "*": {
         "capacityLitres": 5,
         "transferSizeLitres": 0.5,
         "emptyShapeLoc": "pewter:shapes/block/metal/jug",

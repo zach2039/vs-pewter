@@ -5,8 +5,8 @@
   "authors": [
     "Zach2039"
   ],
-  "description": "Adds leaded pewter and associated craftables",
-  "version": "1.0.1",
+  "description": "Adds leaded pewter and craftable metal tableware",
+  "version": "1.1.0",
   "dependencies": {
     "game": "*"
   }

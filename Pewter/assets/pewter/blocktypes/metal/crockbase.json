@@ -27,7 +27,7 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter" ]
+      "states": [ "pewter", "gold", "silver" ]
     }
   ],
   "attributes": {
@@ -39,8 +39,8 @@
   "doNotRenderAtLod2": true,
   "blockmaterial": "Metal",
   "creativeinventory": {
-    "general": [ "crockbase-pewter" ],
-    "decorative": [ "crockbase-pewter" ]
+    "general": [ "crockbase-*" ],
+    "decorative": [ "crockbase-*" ]
   },
   "replaceable": 400,
   "resistance": 1.5,

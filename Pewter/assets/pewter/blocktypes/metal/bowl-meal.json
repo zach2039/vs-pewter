@@ -25,17 +25,27 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter" ]
+      "states": [ "pewter", "silver", "gold" ]
     }
   ],
   "attributes": {
     "shelvable": true,
-    "eatenBlock": "pewter:bowl-pewter",
+    "eatenBlock": "pewter:bowl-{metal}",
     "handleCookingContainerInteract": true
   },
   "entityClass": "Meal",
   "heldTpIdleAnimation": "holdbothhands",
-  "shape": { "base": "pewter:block/metal/bowl-empty-ground" },
+  "shapeByType": {
+    "*-pewter": {
+      "base": "pewter:block/metal/bowl-empty-ground-pewter"
+    },
+    "*-silver": {
+      "base": "pewter:block/metal/bowl-empty-ground-silver"
+    },
+    "*-gold": {
+      "base": "pewter:block/metal/bowl-empty-ground-gold"
+    }
+  },
   "doNotRenderAtLod2": true,
   "blockmaterial": "Metal",
   "creativeinventory": {
@@ -50,7 +60,7 @@
     "walk": "game:walk/metal"
   },
   "texturesByType": {
-    "*-pewter": {
+    "*": {
       "transparent": { "base": "game:block/transparent" },
       "mat": { "base": "pewter:block/metal/ingot/{metal}" },
       "floor": {

@@ -27,13 +27,13 @@
   },
   "variantgroups": [
     {
-      "code": "orientation",
-      "states": [ "up" ],
-      "combine": "add"
+      "code": "metal",
+      "states": [ "pewter", "silver", "gold" ]
     },
     {
       "code": "orientation",
-      "loadFromProperties": "abstract/horizontalorientation"
+      "states": [ "up" ],
+      "loadFromProperties": "game:abstract/horizontalorientation"
     }
   ],
   "shapebytype": {
@@ -56,6 +56,7 @@
     }
   },
   "textures": {
+    "pewter": { "base": "game:block/metal/ingot/{metal}" }
   },
   "attributes": {
     "reinforcable": true,
@@ -122,9 +123,22 @@
   "heldRightReadyAnimationByType": {
     "*": "holdinglanternrighthand"
   },
-  "creativeinventory": {
-    "general": [ "*-up" ],
-    "decorative": [ "*-up" ]
+  "creativeinventory": {},
+  "creativeinventoryStacksByType": {
+    "*-up": [
+      {
+        "tabs": [ "general", "decorative" ],
+        "stacks": [
+          {
+            "type": "block",
+            "code": "pewter:candlelamp-{metal}-up",
+            "attributes": {
+              "material": "{metal}"
+            }
+          }
+        ]
+      }
+    ]
   },
   "replaceable": 5001,
   "resistance": 0.5,

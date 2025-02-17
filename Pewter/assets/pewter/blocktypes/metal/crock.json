@@ -29,7 +29,7 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter" ]
+      "states": [ "pewter", "silver", "gold" ]
     },
     {
       "code": "side",
@@ -43,12 +43,12 @@
     "crock-pewter-*": {
       "shelvable": true,
       "mealContainer": true,
-      "mealBlockCode": "pewter:crock-pewter-{side}",
+      "mealBlockCode": "pewter:crock-{metal}-{side}",
       "servingCapacity": 6,
       "bowlContents": null,
       "handleLiquidContainerInteract": true,
       "handleCookingContainerInteract": true,
-      "emptiedBlockCode": "pewter:crock-pewter-{side}",
+      "emptiedBlockCode": "pewter:crock-{metal}-{side}",
       "handbook": {
         "extraSections": [
           {
@@ -80,8 +80,8 @@
   "doNotRenderAtLod2": true,
   "blockmaterial": "Metal",
   "creativeinventory": {
-    "general": [ "crock-pewter-east" ],
-    "decorative": [ "crock-pewter-east" ]
+    "general": [ "crock-{metal}-east" ],
+    "decorative": [ "crock-{metal}-east" ]
   },
   "replaceable": 400,
   "resistance": 1.5,

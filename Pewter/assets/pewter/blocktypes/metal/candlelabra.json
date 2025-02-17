@@ -9,36 +9,40 @@
   ],
   "variantgroups": [
     {
+      "code": "metal",
+      "states": [ "pewter", "silver", "gold" ]
+    },
+    {
       "code": "orientation",
       "states": [ "up" ],
       "loadFromProperties": "game:abstract/horizontalorientation"
     }
   ],
   "shapebytype": {
-    "candlelabra-up": {
+    "candlelabra-*-up": {
       "base": "pewter:block/metal/candlelabra-ground",
       "rotateY": 90
     },
-    "candlelabra-north": {
+    "candlelabra-*-north": {
       "base": "pewter:block/metal/candlelabra-wall",
       "rotateY": 90
     },
-    "candlelabra-east": {
+    "candlelabra-*-east": {
       "base": "pewter:block/metal/candlelabra-wall",
       "rotateY": 0
     },
-    "candlelabra-south": {
+    "candlelabra-*-south": {
       "base": "pewter:block/metal/candlelabra-wall",
       "rotateY": 270
     },
-    "candlelabra-west": {
+    "candlelabra-*-west": {
       "base": "pewter:block/metal/candlelabra-wall",
       "rotateY": 180
     }
   },
   "_comment": "Must declare textures so they get added to the block texture atlas",
   "textures": {
-    "pewter": { "base": "pewter:block/metal/ingot/pewter" }
+    "pewter": { "base": "game:block/metal/ingot/{metal}" }
   },
   "heldRightTpIdleAnimation": "holdinglanternrighthand",
   "heldLeftTpIdleAnimation": "holdinglanternlefthand",
@@ -64,9 +68,9 @@
         "stacks": [
           {
             "type": "block",
-            "code": "pewter:candlelabra-up",
+            "code": "pewter:candlelabra-{metal}-up",
             "attributes": {
-              "material": "pewter"
+              "material": "{metal}"
             }
           }
         ]

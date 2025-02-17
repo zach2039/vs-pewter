@@ -27,7 +27,7 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter" ]
+      "states": [ "pewter", "silver", "gold" ]
     }
   ],
   "attributes": {
@@ -39,8 +39,8 @@
   "doNotRenderAtLod2": true,
   "blockmaterial": "Metal",
   "creativeinventory": {
-    "general": [ "crocklid-pewter" ],
-    "decorative": [ "crocklid-pewter" ]
+    "general": [ "crocklid-*" ],
+    "decorative": [ "crocklid-*" ]
   },
   "replaceable": 400,
   "resistance": 1.5,

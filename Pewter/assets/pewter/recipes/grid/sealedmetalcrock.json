@@ -5,7 +5,9 @@
     "ingredients": {
       "C": {
         "type": "block",
-        "code": "pewter:crock-pewter-east"
+        "code": "pewter:crock-*-east",
+        "name": "metal",
+        "allowedVariants": [ "pewter", "silver", "gold" ]
       },
       "F": {
         "type": "item",
@@ -17,7 +19,7 @@
     "shapeless": true,
     "output": {
       "type": "block",
-      "code": "pewter:crock-pewter-east",
+      "code": "pewter:crock-{metal}-east",
       "quantity": 1
     }
   },
@@ -26,7 +28,9 @@
     "ingredients": {
       "C": {
         "type": "block",
-        "code": "pewter:crock-pewter-east"
+        "code": "pewter:crock-*-east",
+        "name": "metal",
+        "allowedVariants": [ "pewter", "silver", "gold" ]
       },
       "F": {
         "type": "item",
@@ -38,7 +42,7 @@
     "shapeless": true,
     "output": {
       "type": "block",
-      "code": "pewter:crock-pewter-east",
+      "code": "pewter:crock-{metal}-east",
       "quantity": 1
     }
   }
