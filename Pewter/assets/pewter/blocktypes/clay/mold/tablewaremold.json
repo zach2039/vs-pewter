@@ -61,23 +61,6 @@
         "quantity": 4
       }
     },
-    "@tablewaremold-burned-crockbase-(north|south)": {
-      "requiredUnits": 100,
-      "fillHeight": 2,
-      "drop": {
-        "type": "block",
-        "code": "pewter:crockbase-{metal}",
-        "quantity": 2
-      },
-      "fillQuadsByLevel": [
-        {
-          "x1": 5,
-          "z1": 2,
-          "x2": 10,
-          "z2": 14
-        }
-      ]
-    },
     "tablewaremold-burned-crockbase-*": {
       "requiredUnits": 200,
       "fillHeight": 2,
