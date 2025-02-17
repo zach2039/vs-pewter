@@ -78,7 +78,7 @@
         }
       ]
     },
-    "@tablewaremold-burned-crockbase-(east|west)": {
+    "tablewaremold-burned-crockbase-*": {
       "requiredUnits": 200,
       "fillHeight": 2,
       "drop": {
