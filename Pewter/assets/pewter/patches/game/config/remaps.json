@@ -1,0 +1,19 @@
+[
+  {
+    "op": "add",
+    "path": "/game:v1.20.4-pewterv1.1.2-goldsilver",
+    "value": [
+      "/bir remapq pewter:candlelabra-pewter-up pewter:candlelabra-up force",
+      "/bir remapq pewter:candlelabra-pewter-north pewter:candlelabra-north force",
+      "/bir remapq pewter:candlelabra-pewter-south pewter:candlelabra-south force",
+      "/bir remapq pewter:candlelabra-pewter-east pewter:candlelabra-east force",
+      "/bir remapq pewter:candlelabra-pewter-west pewter:candlelabra-west force",
+      "/bir remapq pewter:candlelamp-pewter-up pewter:candlelamp-up force",
+      "/bir remapq pewter:candlelamp-pewter-north pewter:candlelamp-north force",
+      "/bir remapq pewter:candlelamp-pewter-south pewter:candlelamp-south force",
+      "/bir remapq pewter:candlelamp-pewter-east pewter:candlelamp-east force",
+      "/bir remapq pewter:candlelamp-pewter-west pewter:candlelamp-west force"
+    ],
+    "file": "game:config/remaps.json"
+  }
+]

@@ -1,3 +1,7 @@
+### v1.20.x-v1.1.2
+
+- Add remaps to fix broken placed blocks in existing worlds
+
 ### v1.20.x-v1.1.1
 
 - Fix gold and silver crocks not fillable from pots 

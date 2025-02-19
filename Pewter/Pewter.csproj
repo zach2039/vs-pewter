@@ -45,6 +45,7 @@
     <None Remove="assets\pewter\blocktypes\metal\crockbase.json" />
     <None Remove="assets\pewter\patches\game\blocktypes\legacy\ingotpile.json" />
     <None Remove="assets\pewter\patches\game\blocktypes\metal\platepile.json" />
+    <None Remove="assets\pewter\patches\game\config\remaps.json" />
     <None Remove="assets\pewter\patches\game\itemtypes\part\rod.json" />
     <None Remove="assets\pewter\patches\game\itemtypes\resource\ingot.json" />
     <None Remove="assets\pewter\patches\game\itemtypes\resource\metalbit.json" />
