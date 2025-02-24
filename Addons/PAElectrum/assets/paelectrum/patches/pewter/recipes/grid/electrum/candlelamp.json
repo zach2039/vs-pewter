@@ -1,0 +1,8 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:recipes/grid/candlelamp.json",
+    "path": "/ingredients/B/allowedVariants/-",
+    "value": "electrum"
+  }
+]

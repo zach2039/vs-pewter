@@ -4,7 +4,7 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter", "silver", "gold" ]
+      "states": [ "pewter" ]
     }
   ],
   "shape": { "base": "pewter:block/metal/jug" },

@@ -57,6 +57,7 @@
     <None Remove="assets\pewter\recipes\clayforming\jugmold.json" />
     <None Remove="assets\pewter\recipes\grid\candlelabra.json" />
     <None Remove="assets\pewter\recipes\grid\candlelamp.json" />
+    <None Remove="assets\pewter\recipes\grid\metalbit.json" />
     <None Remove="assets\pewter\recipes\grid\metalcrock.json" />
     <None Remove="assets\game\textures\block\metal\sheet\pewter.png" />
     <None Remove="assets\pewter\blocktypes\metal\bowl-meal.json" />
@@ -73,13 +74,7 @@
     <None Remove="assets\pewter\recipes\grid\sealedmetalcrock.json" />
     <None Remove="assets\pewter\shapes\block\clay\mold\bowl.json" />
     <None Remove="assets\pewter\shapes\block\clay\mold\jug.json" />
-    <None Remove="assets\pewter\shapes\block\metal\bowl-empty-ground-gold.json" />
-    <None Remove="assets\pewter\shapes\block\metal\bowl-empty-ground-silver.json" />
     <None Remove="assets\pewter\shapes\block\metal\bowl-empty-ground.json" />
-    <None Remove="assets\pewter\shapes\block\metal\bowl-ground-gold.json" />
-    <None Remove="assets\pewter\shapes\block\metal\bowl-ground-liquid-gold.json" />
-    <None Remove="assets\pewter\shapes\block\metal\bowl-ground-liquid-silver.json" />
-    <None Remove="assets\pewter\shapes\block\metal\bowl-ground-silver.json" />
     <None Remove="assets\pewter\shapes\block\metal\candlelabra-wall.json" />
     <None Remove="assets\pewter\shapes\block\metal\jug.json" />
     <None Remove="assets\pewter\textures\block\metal\plate\pewter.png" />

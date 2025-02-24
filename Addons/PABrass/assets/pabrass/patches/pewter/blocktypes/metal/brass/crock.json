@@ -1,0 +1,31 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/crock.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "brass"
+  },
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/crock.json",
+    "path": "/attributesByType/crock-brass-*",
+    "value": {
+      "shelvable": true,
+      "mealContainer": true,
+      "mealBlockCode": "pewter:crock-brass-{side}",
+      "servingCapacity": 6,
+      "bowlContents": null,
+      "handleLiquidContainerInteract": true,
+      "handleCookingContainerInteract": true,
+      "emptiedBlockCode": "pewter:crock-brass-{side}",
+      "handbook": {
+        "extraSections": [
+          {
+            "title": "pewter:handbooktitle-crock",
+            "text": "pewter:handbooktext-crock"
+          }
+        ]
+      }
+    }
+  }
+]

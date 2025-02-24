@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Xml.Linq;
 using Cake.Common;
 using Cake.Common.IO;
 using Cake.Common.Tools.DotNet;
@@ -63,6 +64,21 @@ public sealed class ValidateJsonTask : FrostingTask<BuildContext>
                 throw new Exception($"Validation failed for JSON file: {file.FullPath}{Environment.NewLine}{ex.Message}", ex);
             }
         }
+
+        // Addons
+        var addonJsonFiles = context.GetFiles($"../Addons/**/assets/**/*.json");
+        foreach (var file in addonJsonFiles)
+        {
+            try
+            {
+                var json = File.ReadAllText(file.FullPath);
+                JToken.Parse(json);
+            }
+            catch (JsonException ex)
+            {
+                throw new Exception($"Validation failed for JSON file: {file.FullPath}{Environment.NewLine}{ex.Message}", ex);
+            }
+        }
     }
 }
 
@@ -104,6 +120,25 @@ public sealed class PackageTask : FrostingTask<BuildContext>
             context.CopyFile($"../{BuildContext.ProjectName}/modicon.png", $"../Releases/{context.Name}/modicon.png");
         }
         context.Zip($"../Releases/{context.Name}", $"../Releases/{context.Name}_{context.Version}.zip");
+
+        // Addons
+        var addonFolders = context.GetSubDirectories($"../Addons/");
+        foreach (var dir in addonFolders)
+        {
+            var addonName = dir.GetDirectoryName();
+            var modInfo = context.DeserializeJsonFromFile<ModInfo>($"../Addons/{addonName}/modinfo.json");
+            var addonVersion = modInfo.Version;
+            var addonModID = modInfo.ModID;
+            context.EnsureDirectoryExists($"../Releases/{addonModID}");
+            context.CopyDirectory($"../Addons/{addonName}/assets", $"../Releases/{addonModID}/assets");
+            context.CopyFile($"../Addons/{addonName}/modinfo.json", $"../Releases/{addonModID}/modinfo.json");
+            
+            if (context.FileExists($"../Addons/{addonName}/modicon.png"))
+            {
+                context.CopyFile($"../Addons/{addonName}/modicon.png", $"../Releases/{addonModID}/modicon.png");
+            }
+            context.Zip($"../Releases/{addonModID}", $"../Releases/{addonModID}_{addonVersion}.zip");
+        }
     }
 }
 

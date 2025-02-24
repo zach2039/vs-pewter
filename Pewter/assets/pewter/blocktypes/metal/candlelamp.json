@@ -28,7 +28,7 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter", "silver", "gold" ]
+      "states": [ "pewter" ]
     },
     {
       "code": "orientation",

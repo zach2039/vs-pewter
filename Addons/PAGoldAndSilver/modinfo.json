@@ -1,0 +1,14 @@
+{
+  "type": "content",
+  "modid": "pagoldsilver",
+  "name": "Pewter Additions: Gold and Silver",
+  "authors": [
+    "Zach2039"
+  ],
+  "description": "Adds gold and silver tableware; requires Pewter",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "*",
+	"pewter": "*"
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:recipes/grid/candlelabra.json",
+    "path": "/-",
+    "value": {
+  "ingredientPattern": "LI,RS",
+	  "ingredients": {
+		"L": {
+		  "type": "block",
+		  "code": "pewter:candlelamp-silver-up",
+		  "quantity": 3
+		},
+		"R": {
+		  "type": "item",
+		  "code": "game:rod-silver",
+		  "quantity": 2
+		},
+		"S": {
+		  "type": "item",
+		  "code": "game:solderbar-*",
+		  "quantity": 1,
+		  "name": "mat",
+		  "allowedVariants": [ "tin", "silver" ]
+		},
+		"I": {
+		  "type": "item",
+		  "code": "game:solderingiron",
+		  "isTool": true,
+		  "toolDurabilityCost": 3
+		}
+	  },
+	  "width": 2,
+	  "height": 2,
+	  "output": {
+		"type": "block",
+		"code": "pewter:candlelabra-silver-up"
+	  }
+	}
+  }
+]

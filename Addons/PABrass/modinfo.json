@@ -1,0 +1,14 @@
+{
+  "type": "content",
+  "modid": "pabrass",
+  "name": "Pewter Additions: Brass",
+  "authors": [
+    "Zach2039"
+  ],
+  "description": "Adds brass tableware; requires Pewter",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "*",
+	"pewter": "*"
+  }
+}

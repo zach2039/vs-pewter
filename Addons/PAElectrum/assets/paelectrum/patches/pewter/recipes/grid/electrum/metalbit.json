@@ -1,0 +1,8 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:recipes/grid/metalbit.json",
+    "path": "/0/ingredients/I/allowedVariants/-",
+    "value": "electrum"
+  }
+]

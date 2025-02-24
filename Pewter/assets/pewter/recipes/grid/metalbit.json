@@ -1,0 +1,141 @@
+[
+  {
+    "ingredientPattern": "C	I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "pewter:bowl-*",
+        "name": "metal",
+        "allowedVariants": [ "pewter" ]
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 5
+    }
+  },
+  {
+    "ingredientPattern": "C	I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "pewter:candlelabra-*-up",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 55
+    }
+  },
+  {
+    "ingredientPattern": "C	I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "pewter:candlelamp-*-up",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 5
+    }
+  },
+  {
+    "ingredientPattern": "C	I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "pewter:crock-*-east",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 15
+    }
+  },
+  {
+    "ingredientPattern": "C	I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "pewter:crocklid-*",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 5
+    }
+  },
+  {
+    "ingredientPattern": "C	I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "pewter:crockbase-*",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 10
+    }
+  }
+]

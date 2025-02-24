@@ -25,7 +25,7 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter", "silver", "gold" ]
+      "states": [ "pewter" ]
     }
   ],
   "attributes": {
@@ -38,12 +38,6 @@
   "shapeByType": {
     "*-pewter": {
       "base": "pewter:block/metal/bowl-empty-ground-pewter"
-    },
-    "*-silver": {
-      "base": "pewter:block/metal/bowl-empty-ground-silver"
-    },
-    "*-gold": {
-      "base": "pewter:block/metal/bowl-empty-ground-gold"
     }
   },
   "doNotRenderAtLod2": true,

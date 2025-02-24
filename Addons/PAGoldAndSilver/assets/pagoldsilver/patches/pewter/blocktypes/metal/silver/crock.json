@@ -1,0 +1,31 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/crock.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "silver"
+  },
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/crock.json",
+    "path": "/attributesByType/crock-silver-*",
+    "value": {
+      "shelvable": true,
+      "mealContainer": true,
+      "mealBlockCode": "pewter:crock-silver-{side}",
+      "servingCapacity": 6,
+      "bowlContents": null,
+      "handleLiquidContainerInteract": true,
+      "handleCookingContainerInteract": true,
+      "emptiedBlockCode": "pewter:crock-silver-{side}",
+      "handbook": {
+        "extraSections": [
+          {
+            "title": "pewter:handbooktitle-crock",
+            "text": "pewter:handbooktext-crock"
+          }
+        ]
+      }
+    }
+  }
+]

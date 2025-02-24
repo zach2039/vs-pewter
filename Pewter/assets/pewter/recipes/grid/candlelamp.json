@@ -5,7 +5,7 @@
       "type": "block",
       "code": "pewter:bowl-*",
       "name": "metal",
-      "allowedVariants": [ "pewter", "silver", "gold" ]
+      "allowedVariants": [ "pewter" ]
     },
     "F": {
       "type": "item",

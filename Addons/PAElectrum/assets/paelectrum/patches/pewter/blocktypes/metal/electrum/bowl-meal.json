@@ -1,0 +1,16 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/bowl-meal.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "electrum"
+  },
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/bowl-meal.json",
+    "path": "/shapeByType/*-electrum",
+    "value": {
+		"base": "paelectrum:block/metal/bowl-empty-ground-electrum"
+	}
+  },
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/candlelabra.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "brass"
+  }
+]

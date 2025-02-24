@@ -1,0 +1,14 @@
+{
+  "type": "content",
+  "modid": "paelectrum",
+  "name": "Pewter Additions: Electrum",
+  "authors": [
+    "Zach2039"
+  ],
+  "description": "Adds electrum tableware; requires Pewter",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "*",
+	"pewter": "*"
+  }
+}

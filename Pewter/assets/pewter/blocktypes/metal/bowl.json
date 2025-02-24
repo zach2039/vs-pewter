@@ -25,7 +25,7 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "pewter", "silver", "gold" ]
+      "states": [ "pewter" ]
     }
   ],
   "attributesByType": {
@@ -51,63 +51,11 @@
           }
         ]
       }
-    },
-    "*-silver": {
-      "shelvable": true,
-      "liquidContainerProps": {
-        "capacityLitres": 1,
-        "transferSizeLitres": 0.1,
-        "emptyShapeLoc": "pewter:shapes/block/metal/bowl-empty-ground-silver",
-        "opaqueContentShapeLoc": "pewter:shapes/block/metal/bowl-contents",
-        "liquidContentShapeLoc": "pewter:shapes/block/metal/bowl-liquidcontents",
-        "liquidMaxYTranslate": 0.05
-      },
-      "mealContainer": true,
-      "mealBlockCode": "pewter:bowl-meal-silver",
-      "servingCapacity": 1,
-      "bowlContents": null,
-      "handbook": {
-        "extraSections": [
-          {
-            "title": "pewter:handbooktitle-bowl",
-            "text": "pewter:handbooktext-bowl"
-          }
-        ]
-      }
-    },
-    "*-gold": {
-      "shelvable": true,
-      "liquidContainerProps": {
-        "capacityLitres": 1,
-        "transferSizeLitres": 0.1,
-        "emptyShapeLoc": "pewter:shapes/block/metal/bowl-empty-ground-gold",
-        "opaqueContentShapeLoc": "pewter:shapes/block/metal/bowl-contents",
-        "liquidContentShapeLoc": "pewter:shapes/block/metal/bowl-liquidcontents",
-        "liquidMaxYTranslate": 0.05
-      },
-      "mealContainer": true,
-      "mealBlockCode": "pewter:bowl-meal-gold",
-      "servingCapacity": 1,
-      "bowlContents": null,
-      "handbook": {
-        "extraSections": [
-          {
-            "title": "pewter:handbooktitle-bowl",
-            "text": "pewter:handbooktext-bowl"
-          }
-        ]
-      }
     }
   },
   "shapeByType": {
     "*-pewter": {
       "base": "pewter:block/metal/bowl-empty-ground-pewter"
-    },
-    "*-silver": {
-      "base": "pewter:block/metal/bowl-empty-ground-silver"
-    },
-    "*-gold": {
-      "base": "pewter:block/metal/bowl-empty-ground-gold"
     }
   },
   "heldTpIdleAnimation": "holdbothhands",

@@ -1,0 +1,44 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/bowl.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "brass"
+  },
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/bowl.json",
+    "path": "/attributesByType/*-brass",
+    "value": {
+      "shelvable": true,
+      "liquidContainerProps": {
+        "capacityLitres": 1,
+        "transferSizeLitres": 0.1,
+        "emptyShapeLoc": "pabrass:shapes/block/metal/bowl-empty-ground-brass",
+        "opaqueContentShapeLoc": "pewter:shapes/block/metal/bowl-contents",
+        "liquidContentShapeLoc": "pewter:shapes/block/metal/bowl-liquidcontents",
+        "liquidMaxYTranslate": 0.05
+      },
+      "mealContainer": true,
+      "mealBlockCode": "pewter:bowl-meal-brass",
+      "servingCapacity": 1,
+      "bowlContents": null,
+      "handbook": {
+        "extraSections": [
+          {
+            "title": "pewter:handbooktitle-bowl",
+            "text": "pewter:handbooktext-bowl"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "addmerge",
+    "file": "pewter:blocktypes/metal/bowl.json",
+    "path": "/shapeByType/*-brass",
+    "value": {
+		"base": "pabrass:block/metal/bowl-empty-ground-brass"
+	}
+  },
+]

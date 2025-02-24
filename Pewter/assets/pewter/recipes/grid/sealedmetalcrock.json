@@ -7,7 +7,7 @@
         "type": "block",
         "code": "pewter:crock-*-east",
         "name": "metal",
-        "allowedVariants": [ "pewter", "silver", "gold" ]
+        "allowedVariants": [ "pewter" ]
       },
       "F": {
         "type": "item",
@@ -30,7 +30,7 @@
         "type": "block",
         "code": "pewter:crock-*-east",
         "name": "metal",
-        "allowedVariants": [ "pewter", "silver", "gold" ]
+        "allowedVariants": [ "pewter" ]
       },
       "F": {
         "type": "item",

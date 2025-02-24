@@ -1,0 +1,27 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:recipes/grid/metalcrock.json",
+    "path": "/-",
+    "value": {
+	  "ingredientPattern": "BL",
+	  "ingredients": {
+		"B": {
+		  "type": "block",
+		  "code": "pewter:crockbase-electrum"
+		},
+		"L": {
+		  "type": "block",
+		  "code": "pewter:crocklid-electrum"
+		}
+	  },
+	  "width": 2,
+	  "height": 1,
+	  "shapeless": true,
+	  "output": {
+		"type": "block",
+		"code": "pewter:crock-electrum-east"
+	  }
+	}
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "op": "addmerge",
+    "file": "pewter:recipes/grid/sealedmetalcrock.json",
+    "path": "/0/ingredients/C/allowedVariants/-",
+    "value": "silver"
+  },
+  {
+    "op": "addmerge",
+    "file": "pewter:recipes/grid/sealedmetalcrock.json",
+    "path": "/1/ingredients/C/allowedVariants/-",
+    "value": "silver"
+  }
+]
