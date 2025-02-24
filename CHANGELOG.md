@@ -1,3 +1,9 @@
+### v1.20.x-v1.2.0
+
+- Remove gold and silver tableware; now in separate addon
+- Add metal recycling for tableware
+- Make crock lid and bowl molds rackable
+
 ### v1.20.x-v1.1.2
 
 - Add remaps to fix broken placed blocks in existing worlds
