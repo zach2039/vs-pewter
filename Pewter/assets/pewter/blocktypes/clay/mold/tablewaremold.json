@@ -55,6 +55,8 @@
     "tablewaremold-burned-bowl-*": {
       "requiredUnits": 100,
       "fillHeight": 1,
+      "moldrackable": true,
+      "onmoldrackTransform": { "rotation": { "z": 90 } },
       "drop": {
         "type": "block",
         "code": "pewter:bowl-{metal}",
@@ -64,6 +66,7 @@
     "tablewaremold-burned-crockbase-*": {
       "requiredUnits": 200,
       "fillHeight": 2,
+      "moldrackable": false,
       "drop": {
         "type": "block",
         "code": "pewter:crockbase-{metal}",
@@ -73,6 +76,8 @@
     "tablewaremold-burned-crocklid-*": {
       "requiredUnits": 100,
       "fillHeight": 1,
+      "moldrackable": true,
+      "onmoldrackTransform": { "rotation": { "z": 90 } },
       "drop": {
         "type": "block",
         "code": "pewter:crocklid-{metal}",
@@ -82,6 +87,7 @@
     "tablewaremold-burned-jug-*": {
       "requiredUnits": 100,
       "fillHeight": 7,
+      "moldrackable": false,
       "drop": {
         "type": "block",
         "code": "pewter:jug-{metal}",
