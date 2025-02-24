@@ -10,7 +10,7 @@ Adds pewter as an alloy and craftable metal tableware. The alloy mixture of Pewt
 - Lead (5-10%)
 - Copper (1-5%)
 
-Items added that can be made of pewter (and now gold and silver) are:
+Items added that can be made of pewter are:
 
 - Crocks
   - Holds 6 servings instead of 4. Must be assembled from parts casted separately.
@@ -22,6 +22,16 @@ Items added that can be made of pewter (and now gold and silver) are:
 - Candelabra
   - Provides light level of 14 and can be placed on walls and floors.
   
+
+Addons
+--------
+
+Additional addons are available that add other metal variants of tableware; these addons rely on Pewter being installed:
+
+- [Brass]()
+- [Gold and Silver]()
+- [Electrum]()
+
 
 Future Plans
 --------
