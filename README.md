@@ -26,11 +26,11 @@ Items added that can be made of pewter are:
 Addons
 --------
 
-Additional addons are available that add other metal variants of tableware; these addons rely on Pewter being installed:
+Additional addons are available that add other metal variants of tableware; these addons rely on Pewter being installed and are not standalone mods:
 
-- [Brass]()
-- [Gold and Silver]()
-- [Electrum]()
+- [Brass](https://mods.vintagestory.at/pabrass)
+- [Gold and Silver](https://mods.vintagestory.at/pagoldsilver)
+- [Electrum](https://mods.vintagestory.at/paelectrum)
 
 
 Future Plans

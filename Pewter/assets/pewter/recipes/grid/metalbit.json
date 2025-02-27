@@ -137,5 +137,28 @@
       "code": "game:metalbit-{metal}",
       "quantity": 10
     }
+  },
+  {
+    "ingredientPattern": "C	I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "pewter:jug-*",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 20
+    }
   }
 ]

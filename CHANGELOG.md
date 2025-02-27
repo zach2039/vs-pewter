@@ -1,3 +1,7 @@
+### v1.20.x-v1.2.1
+
+- Fix missing metal recycling recipe for jug
+
 ### v1.20.x-v1.2.0
 
 - Remove gold and silver tableware; now in separate addon

@@ -6,7 +6,7 @@
     "Zach2039"
   ],
   "description": "Adds leaded pewter and craftable metal tableware",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "dependencies": {
     "game": "*"
   }
