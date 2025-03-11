@@ -10,7 +10,7 @@
     "file": "pewter:blocktypes/metal/bowl-meal.json",
     "path": "/shapeByType/*-brass",
     "value": {
-		"base": "pabrass:block/metal/bowl-empty-ground-brass"
-	}
-  },
+		  "base": "pabrass:block/metal/bowl-empty-ground-brass"
+	  }
+  }
 ]

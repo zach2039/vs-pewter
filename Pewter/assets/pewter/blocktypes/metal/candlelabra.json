@@ -54,10 +54,12 @@
       "handbook": {
         "include": true,
         "groupBy": [ "candlelabra-*" ]
-      }
+      },
+      "material": "{metal}"
     },
     "*": {
-      "handbook": { "exclude": true }
+      "handbook": { "exclude": true },
+      "material": "{metal}"
     }
   },
   "creativeinventory": {},

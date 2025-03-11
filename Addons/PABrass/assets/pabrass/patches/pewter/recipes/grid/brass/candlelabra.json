@@ -33,8 +33,11 @@
 	  "width": 2,
 	  "height": 2,
 	  "output": {
-		"type": "block",
-		"code": "pewter:candlelabra-brass-up"
+			"type": "block",
+			"code": "pewter:candlelabra-brass-up",
+			"attributes": {
+				"material": "brass"
+			}
 	  }
 	}
   }

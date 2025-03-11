@@ -56,9 +56,9 @@
   "texturesByType": {
     "*": {
       "transparent": { "base": "game:block/transparent" },
-      "mat": { "base": "pewter:block/metal/ingot/{metal}" },
+      "mat": { "base": "game:block/metal/ingot/{metal}" },
       "floor": {
-        "base": "pewter:block/metal/ingot/{metal}",
+        "base": "game:block/metal/ingot/{metal}",
         "overlays": [ "game:block/slightlydarker" ]
       }
     }

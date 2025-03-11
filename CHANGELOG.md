@@ -1,3 +1,8 @@
+### v1.20.x-v1.2.2
+
+- Fixed candelabra recipe lacking `"material"` in attributes on output, causing missing recipes and crashes
+- Fixed incorrect texture defs in `bowl-meal.json` leading to model baking issues
+
 ### v1.20.x-v1.2.1
 
 - Fix missing metal recycling recipe for jug

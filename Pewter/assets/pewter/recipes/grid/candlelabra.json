@@ -30,7 +30,10 @@
     "height": 2,
     "output": {
       "type": "block",
-      "code": "pewter:candlelabra-pewter-up"
+      "code": "pewter:candlelabra-pewter-up",
+      "attributes": {
+        "material": "pewter"
+      }
     }
   }
 ]
