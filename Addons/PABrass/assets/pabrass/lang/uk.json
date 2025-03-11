@@ -1,0 +1,12 @@
+{
+  "game:item-rod-brass": "Прут із латуні",
+	
+  "pewter:block-candlelamp-brass-*": "Свічник із латуні",
+  "pewter:block-candlelabra-brass-*": "Канделябр із латуні",
+  "pewter:block-crock-brass-*": "Гощик із латуні",
+  "pewter:block-crocklid-brass": "Кришка горщика із латуні",
+  "pewter:block-crockbase-brass": "Корпус гощика із латуні",
+  "pewter:block-jug-brass": "Глек із латуні",
+  "pewter:block-bowl-brass": "Тарілка із латуні",
+  "pewter:block-bowl-meal-brass": "Тарілка із латуні з їжею"
+}

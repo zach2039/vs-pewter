@@ -1,3 +1,7 @@
+### v1.20.x-v1.2.3
+
+- Add `uk.json` lang file (thanks, DeanBro!)
+
 ### v1.20.x-v1.2.2
 
 - Fixed candelabra recipe lacking `"material"` in attributes on output, causing missing recipes and crashes

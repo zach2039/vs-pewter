@@ -1,0 +1,31 @@
+{
+  "game:material-pewter": "П'ютер",
+  "game:item-ingot-pewter": "Зливок п'ютера",
+  "game:item-rod-pewter": "Прут з п'ютера",
+  "game:item-metalplate-pewter": "Пластина з п'ютера",
+  "game:item-metalbit-pewter": "Самородок п'ютера",
+  "game:block-metalsheet-pewter-*": "Лист з п'ютера",
+
+  "pewter:handbooktitle-bowl": "Використання",
+  "pewter:handbooktext-bowl": "Дивіться <a href=\"handbook://craftinginfo-mealcooking\">посібник з приготування страв</a>. Наповніть натискаючи <hk>rightmouse</hk> по <a href=\"handbook://block-claypot-burned\">горнецю</a>, <a href=\"handbooksearch://crock\">горщику</a>, <a href=\"handbook://block-woodbucket\">відру</a>, або іншу ємність з їжею або рідиною всередині. Якщо ви хочете спорожнити миску або каструлю, не з'їдаючи її вміст, просто киньте її у воду!",
+  "pewter:handbooktitle-crock": "Використовується для",
+  "pewter:handbooktext-crock": "Використовується для тривалого зберігання готових страв і маринованих овочів. Не можна вживати їжу безпосередньо; використовуйте <a href=\"handbooksearch://bowl\">тарілку</a> щоб дістати їжу. Наповніть так само, як і миску. Запечатайте жиром або воском (використовуючи сітку крафту), щоб їжа зберігалася ще довше.",
+
+  "pewter:block-candlelamp-pewter-*": "Свічник з п'ютера",
+  "pewter:block-candlelabra-pewter-*": "Канделябр з п'ютера",
+  "pewter:block-crock-pewter-*": "Гощик з п'ютера",
+  "pewter:block-crocklid-pewter": "Кришка горщика з п'ютера",
+  "pewter:block-crockbase-pewter": "Корпус гощика з п'ютера",
+  "pewter:block-jug-pewter": "Глек з п'ютера",
+  "pewter:block-bowl-pewter": "Тарілка з п'ютера",
+  "pewter:block-bowl-meal-pewter": "Тарілка з п'ютера з їжею",
+
+  "pewter:block-tablewaremold-raw-bowl-*": "Сира форма для тарілки",
+  "pewter:block-tablewaremold-burned-bowl-*": "Форма для тарілки",
+  "pewter:block-tablewaremold-raw-crockbase-*": "Сира форма для корпуса горщика",
+  "pewter:block-tablewaremold-burned-crockbase-*": "Форма для корпуса горщика",
+  "pewter:block-tablewaremold-raw-crocklid-*": "Сира форма для кришки горщика",
+  "pewter:block-tablewaremold-burned-crocklid-*": "Форма для кришки горщика",
+  "pewter:block-tablewaremold-raw-jug-*": "Сира форма для глека",
+  "pewter:block-tablewaremold-burned-jug-*": "Форма для глека"
+}

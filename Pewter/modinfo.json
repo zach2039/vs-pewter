@@ -5,8 +5,11 @@
   "authors": [
     "Zach2039"
   ],
+  "contributors": [
+    "DeanBro"
+  ],
   "description": "Adds leaded pewter and craftable metal tableware",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "dependencies": {
     "game": "*"
   }

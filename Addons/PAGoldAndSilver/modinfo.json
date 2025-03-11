@@ -5,8 +5,11 @@
   "authors": [
     "Zach2039"
   ],
+  "contributors": [
+    "DeanBro"
+  ],
   "description": "Adds gold and silver tableware; requires Pewter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "game": "*",
 	  "pewter": "*"
