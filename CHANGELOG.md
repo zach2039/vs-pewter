@@ -1,3 +1,8 @@
+### v1.21.x-v1.3.0
+
+ - Update to VS-1.26.6
+ - Fix [#4](https://github.com/zach2039/vs-pewter/issues/4)
+
 ### v1.20.x-v1.2.3
 
 - Add `uk.json` lang file (thanks, DeanBro!)
