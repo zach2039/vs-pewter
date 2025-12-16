@@ -60,6 +60,7 @@
   },
   "attributes": {
     "reinforcable": true,
+    "allowUnstablePlacement": true,
     "attachmentAreas": {
       "down": {
         "x1": 5,

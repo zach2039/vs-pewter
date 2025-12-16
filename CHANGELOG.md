@@ -1,3 +1,7 @@
+### v1.21.x-v1.3.1
+
+ - Fix candle lamp not attachable to side of block
+
 ### v1.21.x-v1.3.0
 
  - Update to VS-1.26.6

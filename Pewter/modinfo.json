@@ -9,7 +9,7 @@
     "DeanBro"
   ],
   "description": "Adds leaded pewter and craftable metal tableware",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "dependencies": {
     "game": "*"
   }
