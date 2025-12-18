@@ -6,7 +6,7 @@ Overview
 
 Adds pewter as an alloy and craftable metal tableware. The alloy mixture of Pewter is:
 
-- Tin (80-95%)
+- Tin (80-94%)
 - Lead (5-10%)
 - Copper (1-5%)
 
