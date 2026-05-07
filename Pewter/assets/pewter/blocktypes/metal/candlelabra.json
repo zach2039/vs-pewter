@@ -59,7 +59,8 @@
     },
     "*": {
       "handbook": { "exclude": true },
-      "material": "{metal}"
+      "material": "{metal}",
+      "shelvable": false
     }
   },
   "creativeinventory": {},

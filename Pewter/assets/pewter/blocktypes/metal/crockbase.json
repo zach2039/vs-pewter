@@ -31,7 +31,8 @@
     }
   ],
   "attributes": {
-    "tempGlowMode": 1
+    "tempGlowMode": 1,
+    "shelvable": true
   },
   "shape": {
     "base": "pewter:block/metal/crock/crockbase"

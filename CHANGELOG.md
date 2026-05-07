@@ -1,3 +1,8 @@
+### v1.22.x-v1.4.0
+
+ - Update to VS-1.22.2
+ - Added partial shelf support for some objects.
+
 ### v1.21.x-v1.3.1
 
  - Fix candle lamp not attachable to side of block

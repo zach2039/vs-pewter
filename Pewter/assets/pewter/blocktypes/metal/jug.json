@@ -50,6 +50,12 @@
       "scale": 0.75
     },
     "shelvable": true,
+    "displayable": {
+        "shelf": {
+            "size": { "width": 6, "height": 11, "length": 6 },
+            "randYRotAngle": 7
+        }
+    },
     "liquidContainerPropsByType": {
       "*": {
         "capacityLitres": 5,

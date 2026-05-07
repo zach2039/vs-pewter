@@ -79,16 +79,18 @@ namespace Pewter.ModBlock
             }
         }
 
-        public override string GetMeshCacheKey(ItemStack itemstack)
+        public override string GetMeshCacheKey(ItemSlot slot)
         {
+            ItemStack itemstack = slot.Itemstack;
             ItemStack[] nonEmptyContents = GetNonEmptyContents(api.World, itemstack);
             string @string = itemstack.Attributes.GetString("recipeCode");
             AssetLocation assetLocation = LabelForContents(@string, nonEmptyContents);
             return Code.ToShortString() + assetLocation.ToShortString();
         }
 
-        public new MeshData GenMesh(ItemStack itemstack, ITextureAtlasAPI targetAtlas, BlockPos forBlockPos = null)
+        public new MeshData GenMesh(ItemSlot slot, ITextureAtlasAPI targetAtlas, BlockPos forBlockPos = null)
         {
+            ItemStack itemstack = slot.Itemstack;
             ItemStack[] nonEmptyContents = GetNonEmptyContents(api.World, itemstack);
             string @string = itemstack.Attributes.GetString("recipeCode");
             return GenMesh(api as ICoreClientAPI, LabelForContents(@string, nonEmptyContents));

@@ -2,7 +2,7 @@
   {
     "file": "game:itemtypes/resource/metalchain.json",
     "op": "addmerge",
-    "path": "/skipVariants/-",
-    "value": "*-pewter"
+    "path": "/skipVariants",
+    "value": [ "*-pewter" ]
   }
 ]

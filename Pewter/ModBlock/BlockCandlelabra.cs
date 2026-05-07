@@ -314,7 +314,7 @@ namespace Pewter.ModBlock
             foreach (BlockBehavior blockBehavior in this.BlockBehaviors)
             {
                 EnumHandling handled = EnumHandling.PassThrough;
-                blockBehavior.OnBlockBroken(world, pos, byPlayer, ref handled);
+                blockBehavior.OnBlockBroken(world, pos, byPlayer, dropQuantityMultiplier, ref handled);
                 if (handled == EnumHandling.PreventDefault)
                 {
                     preventDefault = true;
@@ -341,7 +341,8 @@ namespace Pewter.ModBlock
                         world.SpawnItemEntity(drops[i], pos, null);
                     }
                 }
-                world.PlaySoundAt(this.Sounds.GetBreakSound(byPlayer), pos, -0.5, byPlayer, true, 32f, 1f);
+                //world.PlaySoundAt(this.Sounds.GetBreakSound(byPlayer), pos, -0.5, byPlayer, true, 32f, 1f);
+                world.PlaySoundAt(this.Sounds.GetBreakSound(byPlayer).Location, pos.X, pos.Y, pos.Z, byPlayer, true, 32f, 1f);
             }
             if (this.EntityClass != null)
             {
