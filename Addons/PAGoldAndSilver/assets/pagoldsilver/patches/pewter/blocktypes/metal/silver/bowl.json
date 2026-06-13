@@ -29,7 +29,8 @@
             "title": "pewter:handbooktitle-bowl",
             "text": "pewter:handbooktext-bowl"
           }
-        ]
+        ],
+        "ignoreCreativeInvStacks": true
       }
     }
   },

@@ -24,7 +24,8 @@
             "title": "pewter:handbooktitle-crock",
             "text": "pewter:handbooktext-crock"
           }
-        ]
+        ],
+        "ignoreCreativeInvStacks": true
       }
     }
   }
