@@ -5,6 +5,7 @@
  - Remove grid recipe for sealing metal crocks; now sealable only on ground, similar to vanilla
  - Refactor addon patches to align to new Pewter json assets
  - Update molds to match with vanilla (does not remap well, requires intervention in creative or remap via block id
+ - Update lang
 
 ### v1.22.x-v1.4.0
 
