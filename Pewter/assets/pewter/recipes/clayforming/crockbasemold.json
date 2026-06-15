@@ -2,7 +2,7 @@
   "ingredient": {
     "type": "item",
     "code": "game:clay-*",
-    "name": "type",
+    "name": "color",
     "allowedVariants": [ "blue", "fire", "red" ]
   },
   "pattern": [
@@ -82,6 +82,6 @@
   "name": "Crock Base Mold",
   "output": {
     "type": "block",
-    "code": "pewter:tablewaremold-raw-crockbase-north"
+    "code": "pewter:tablewaremold-{color}-raw-crockbase"
   }
 }

@@ -20,12 +20,12 @@
   "pewter:block-bowl-pewter": "Тарілка з п'ютера",
   "pewter:block-bowl-meal-pewter": "Тарілка з п'ютера з їжею",
 
-  "pewter:block-tablewaremold-raw-bowl-*": "Сира форма для тарілки",
-  "pewter:block-tablewaremold-burned-bowl-*": "Форма для тарілки",
-  "pewter:block-tablewaremold-raw-crockbase-*": "Сира форма для корпуса горщика",
-  "pewter:block-tablewaremold-burned-crockbase-*": "Форма для корпуса горщика",
-  "pewter:block-tablewaremold-raw-crocklid-*": "Сира форма для кришки горщика",
-  "pewter:block-tablewaremold-burned-crocklid-*": "Форма для кришки горщика",
-  "pewter:block-tablewaremold-raw-jug-*": "Сира форма для глека",
-  "pewter:block-tablewaremold-burned-jug-*": "Форма для глека"
+  "pewter:block-tablewaremold-*-raw-bowl": "Сира форма для тарілки",
+  "pewter:block-tablewaremold-*-fired-bowl": "Форма для тарілки",
+  "pewter:block-tablewaremold-*-raw-crockbase": "Сира форма для корпуса горщика",
+  "pewter:block-tablewaremold-*-fired-crockbase": "Форма для корпуса горщика",
+  "pewter:block-tablewaremold-*-raw-crocklid": "Сира форма для кришки горщика",
+  "pewter:block-tablewaremold-*-fired-crocklid": "Форма для кришки горщика",
+  "pewter:block-tablewaremold-*-raw-jug": "Сира форма для глека",
+  "pewter:block-tablewaremold-*-fired-jug": "Форма для глека"
 }

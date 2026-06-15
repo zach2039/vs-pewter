@@ -2,7 +2,7 @@
   "ingredient": {
     "type": "item",
     "code": "game:clay-*",
-    "name": "type",
+    "name": "color",
     "allowedVariants": [ "blue", "fire", "red" ]
   },
   "pattern": [
@@ -109,6 +109,6 @@
   "name": "Jug Mold",
   "output": {
     "type": "block",
-    "code": "pewter:tablewaremold-raw-jug-north"
+    "code": "pewter:tablewaremold-{color}-raw-jug"
   }
 }

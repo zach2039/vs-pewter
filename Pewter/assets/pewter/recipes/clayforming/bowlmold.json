@@ -2,7 +2,7 @@
   "ingredient": {
     "type": "item",
     "code": "game:clay-*",
-    "name": "type",
+    "name": "color",
     "allowedVariants": [ "blue", "fire", "red" ]
   },
   "pattern": [
@@ -52,6 +52,6 @@
   "name": "Bowl Mold",
   "output": {
     "type": "block",
-    "code": "pewter:tablewaremold-raw-bowl-north"
+    "code": "pewter:tablewaremold-{color}-raw-bowl"
   }
 }

@@ -9,8 +9,8 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"other": "block/clay/ceramic",
-		"floor": "block/clay/ceramic-dark"
+		"other": "game:block/clay/ceramic",
+		"floor": "game:block/clay/ceramic-dark"
 	},
 	"elements": [
 		{

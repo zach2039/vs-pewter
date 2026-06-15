@@ -1,9 +1,10 @@
-### v1.22.x-v1.4.1
+### v1.22.x-v1.5.0
 
  - Refactor metal crock json to match vanilla crock conventions (requires remap)
  - Refactor metal crock block class to take advantage of shapeLocation field via reflection
  - Remove grid recipe for sealing metal crocks; now sealable only on ground, similar to vanilla
- - Refactor addon patches to align to new Pewter v1.4.1 json 
+ - Refactor addon patches to align to new Pewter json assets
+ - Update molds to match with vanilla (does not remap well, requires intervention in creative or remap via block id
 
 ### v1.22.x-v1.4.0
 

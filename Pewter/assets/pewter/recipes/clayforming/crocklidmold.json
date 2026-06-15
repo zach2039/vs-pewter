@@ -2,7 +2,7 @@
   "ingredient": {
     "type": "item",
     "code": "game:clay-*",
-    "name": "type",
+    "name": "color",
     "allowedVariants": [ "blue", "fire", "red" ]
   },
   "pattern": [
@@ -55,6 +55,6 @@
   "name": "Crock Lid Mold",
   "output": {
     "type": "block",
-    "code": "pewter:tablewaremold-raw-crocklid-north"
+    "code": "pewter:tablewaremold-{color}-raw-crocklid"
   }
 }
