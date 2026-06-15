@@ -9,7 +9,7 @@
     "DeanBro"
   ],
   "description": "Adds gold and silver tableware; requires Pewter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
     "game": "*",
 	  "pewter": "*"

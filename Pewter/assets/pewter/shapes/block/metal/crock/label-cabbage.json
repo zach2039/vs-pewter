@@ -6,7 +6,7 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textures": {
-		"label": "block/clay/crock/label"
+		"label": "game:block/clay/crock/label"
 	},
 	"elements": [
 		{

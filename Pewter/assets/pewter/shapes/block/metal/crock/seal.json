@@ -1,0 +1,36 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"seal": "game:item/resource/fat"
+	},
+	"elements": [
+		{
+			"name": "origin",
+			"from": [ 8.0, 0.0, 8.0 ],
+			"to": [ 8.0, 0.0, 8.0 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "W side12",
+					"from": [ -2.3, 4.0, -2.3 ],
+					"to": [ 2.3, 4.5, 2.3 ],
+					"rotationOrigin": [ -0.3, 0.0, -0.3 ],
+					"faces": {
+						"north": { "texture": "#seal", "uv": [ 9.5, 8.5, 14.0, 9.0 ] },
+						"east": { "texture": "#seal", "uv": [ 5.0, 9.0, 9.5, 9.5 ] },
+						"south": { "texture": "#seal", "uv": [ 1.5, 9.5, 6.0, 10.0 ] },
+						"west": { "texture": "#seal", "uv": [ 3.5, 9.5, 8.0, 10.0 ] }
+					}
+				}
+			]
+		}
+	]}

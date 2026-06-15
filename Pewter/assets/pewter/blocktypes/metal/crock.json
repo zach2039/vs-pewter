@@ -30,68 +30,80 @@
     {
       "code": "metal",
       "states": [ "pewter" ]
-    },
-    {
-      "code": "side",
-      "loadFromProperties": "abstract/horizontalorientation"
     }
   ],
   "attributes": {
-    "tempGlowMode": 1
+    "tempGlowMode": 1,
+    "shelvable": true,
+    "mealContainer": true,
+    "mealBlockCode": "pewter:crock-{metal}",
+    "servingCapacity": 6,
+    "bowlContents": null,
+    "handleLiquidContainerInteract": true,
+    "handleCookingContainerInteract": true,
+    "emptiedBlockCode": "pewter:crock-{metal}",
+    "onTongTransform": {
+      "translation": { "x": -1.1, "y": -0.8, "z": -1.1 },
+      "rotation": { "x": -84, "y": -22, "z": -1 },
+      "scale": 0.81
+    },
+    "labelNames": [
+      "carrot", "cabbage", "onion", "parsnip", "turnip", "pumpkin", 
+      "soybean", "bellpepper", "cassava", "fennel", "mushroom", 
+      "redmeat", "poultry", "porridge", "egg", "fish", "bushmeat",
+      "blueberry", "cranberry", "redcurrant", "whitecurrant",
+      "blackcurrant", "saguaro", "pineapple", "redapple", "pinkapple",
+      "yellowapple", "cherry", "peach", "pear", "orange", "mango",
+      "breadfruit", "lychee", "pomegranate", "beautyberry", "blackberry",
+      "cactusfruit", "cloudberry", "gooseberry", "guava", "kumquat",
+      "plumnatal", "raspberry", "strawberry", "olive"
+    ],
+    "handbook": {
+      "groupBy": [ "block-crock-{metal}" ],
+      "extraSections": [
+        {
+          "title": "pewter:handbooktitle-crock",
+          "text": "pewter:handbooktext-crock"
+        }
+      ]
+    },
+    "attachableToEntity": {
+      "categoryCode": "pot",
+      "texturePrefixCode": "crock-{metal}",
+      "attachedShapeBySlotCode": {
+        "frontrightside": { "base": "game:item/wearable/hooved/elk/crockr" },
+        "frontleftside": { "base": "game:item/wearable/hooved/elk/crockl" }
+      }
   },
-  "attributesByType": {
-    "crock-pewter-*": {
-      "shelvable": true,
-      "mealContainer": true,
-      "mealBlockCode": "pewter:crock-pewter-{side}",
-      "servingCapacity": 6,
-      "bowlContents": null,
-      "handleLiquidContainerInteract": true,
-      "handleCookingContainerInteract": true,
-      "emptiedBlockCode": "pewter:crock-pewter-{side}",
-      "handbook": {
-        "extraSections": [
-          {
-            "title": "pewter:handbooktitle-crock",
-            "text": "pewter:handbooktext-crock"
-          }
-        ]
+  "tongOpening": "wide",
+  "onMetalTongTransform": {
+    "translation": { "x": -1.02, "y": -0.655, "z": -0.9 },
+    "rotation": { "x": -95, "y": -9, "z": 0 }
+  },
+  "displayable": {
+    "shelf": {
+      "size": { "width": 5, "height": 5, "length": 5 },
+      "randYRotAngle": 4
       }
     }
   },
-  "shapeByType": {
-    "*-north": {
-      "base": "pewter:block/metal/crock/base",
-      "rotateY": 0
-    },
-    "*-east": {
-      "base": "pewter:block/metal/crock/base",
-      "rotateY": 270
-    },
-    "*-west": {
-      "base": "pewter:block/metal/crock/base",
-      "rotateY": 90
-    },
-    "*-south": {
-      "base": "pewter:block/metal/crock/base",
-      "rotateY": 180
-    }
-  },
+  "shape": { "base": "pewter:block/metal/crock/base" },
   "doNotRenderAtLod2": true,
   "blockmaterial": "Metal",
   "creativeinventory": {
-    "general": [ "crock-{metal}-east" ],
-    "decorative": [ "crock-{metal}-east" ]
+    "general": [ "*-{metal}" ],
+    "decorative": [ "*-{metal}" ]
   },
   "replaceable": 400,
   "resistance": 1.5,
-  "maxStackSizeByType": {
-    "*": 1
-  },
+  "maxStackSize": 1,
   "lightAbsorption": 0,
   "textures": {
     "mat": { "base": "game:block/metal/ingot/{metal}" },
-    "label": { "base": "game:block/clay/crock/label" }
+    "label": { "base": "game:block/clay/crock/label" },
+    "label2": { "base": "game:block/clay/crock/label2" },
+    "label3": { "base": "game:block/clay/crock/label3" },
+    "seal": { "base": "game:item/resource/ungraded/sulfur" }
   },
   "sounds": {
     "walk": "game:walk/metal"

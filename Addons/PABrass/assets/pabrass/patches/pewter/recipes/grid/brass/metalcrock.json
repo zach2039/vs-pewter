@@ -20,7 +20,7 @@
 	  "shapeless": true,
 	  "output": {
 		"type": "block",
-		"code": "pewter:crock-brass-east"
+		"code": "pewter:crock-brass"
 	  }
 	}
   }

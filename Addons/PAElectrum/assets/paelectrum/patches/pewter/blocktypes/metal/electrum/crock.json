@@ -4,29 +4,5 @@
     "file": "pewter:blocktypes/metal/crock.json",
     "path": "/variantgroups/0/states/-",
     "value": "electrum"
-  },
-  {
-    "op": "addmerge",
-    "file": "pewter:blocktypes/metal/crock.json",
-    "path": "/attributesByType/crock-electrum-*",
-    "value": {
-      "shelvable": true,
-      "mealContainer": true,
-      "mealBlockCode": "pewter:crock-electrum-{side}",
-      "servingCapacity": 6,
-      "bowlContents": null,
-      "handleLiquidContainerInteract": true,
-      "handleCookingContainerInteract": true,
-      "emptiedBlockCode": "pewter:crock-electrum-{side}",
-      "handbook": {
-        "extraSections": [
-          {
-            "title": "pewter:handbooktitle-crock",
-            "text": "pewter:handbooktext-crock"
-          }
-        ],
-        "ignoreCreativeInvStacks": true
-      }
-    }
   }
 ]

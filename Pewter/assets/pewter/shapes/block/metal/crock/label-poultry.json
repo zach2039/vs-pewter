@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"label": "block/clay/crock/label"
+		"label": "game:block/clay/crock/label"
 	},
 	"elements": [
 		{

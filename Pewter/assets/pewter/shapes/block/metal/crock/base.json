@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"mat": "block/metal/ingot/pewter"
+		"mat": "game:block/metal/ingot/pewter"
 	},
 	"elements": [
 		{

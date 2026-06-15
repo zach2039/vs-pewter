@@ -1,7 +1,7 @@
 {
   "pewter:block-candlelamp-gold-*": "Свічник із золота",
   "pewter:block-candlelabra-gold-*": "Канделябр із золота",
-  "pewter:block-crock-gold-*": "Гощик із золота",
+  "pewter:block-crock-gold": "Гощик із золота",
   "pewter:block-crocklid-gold": "Кришка горщика із золота",
   "pewter:block-crockbase-gold": "Корпус гощика із золота",
   "pewter:block-jug-gold": "Глек із золота",
@@ -10,7 +10,7 @@
   
   "pewter:block-candlelamp-silver-*": "Свічник зі срібла",
   "pewter:block-candlelabra-silver-*": "Канделябр зі срібла",
-  "pewter:block-crock-silver-*": "Гощик зі срібла",
+  "pewter:block-crock-silver": "Гощик зі срібла",
   "pewter:block-crocklid-silver": "Кришка горщика зі срібла",
   "pewter:block-crockbase-silver": "Корпус гощика зі срібла",
   "pewter:block-jug-silver": "Глек зі срібла",

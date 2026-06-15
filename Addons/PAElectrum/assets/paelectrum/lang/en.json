@@ -1,7 +1,7 @@
 {
   "pewter:block-candlelamp-electrum-*": "Electrum candle lamp",
   "pewter:block-candlelabra-electrum-*": "Electrum candelabra",
-  "pewter:block-crock-electrum-*": "Electrum crock",
+  "pewter:block-crock-electrum": "Electrum crock",
   "pewter:block-crocklid-electrum": "Electrum crock lid",
   "pewter:block-crockbase-electrum": "Electrum crock base",
   "pewter:block-jug-electrum": "Electrum jug",

@@ -1,7 +1,14 @@
+### v1.22.x-v1.4.1
+
+ - Refactor metal crock json to match vanilla crock conventions (requires remap)
+ - Refactor metal crock block class to take advantage of shapeLocation field via reflection
+ - Remove grid recipe for sealing metal crocks; now sealable only on ground, similar to vanilla
+ - Refactor addon patches to align to new Pewter v1.4.1 json 
+
 ### v1.22.x-v1.4.0
 
  - Update to VS-1.22.2
- - Added partial shelf support for some objects.
+ - Added partial shelf support for some objects
 
 ### v1.21.x-v1.3.1
 

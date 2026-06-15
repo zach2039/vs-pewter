@@ -16,7 +16,7 @@
     "shapeless": true,
     "output": {
       "type": "block",
-      "code": "pewter:crock-pewter-east"
+      "code": "pewter:crock-pewter"
     }
   }
 ]

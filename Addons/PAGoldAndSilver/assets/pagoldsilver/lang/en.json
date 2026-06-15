@@ -1,7 +1,7 @@
 {
   "pewter:block-candlelamp-gold-*": "Gold candle lamp",
   "pewter:block-candlelabra-gold-*": "Gold candelabra",
-  "pewter:block-crock-gold-*": "Gold crock",
+  "pewter:block-crock-gold": "Gold crock",
   "pewter:block-crocklid-gold": "Gold crock lid",
   "pewter:block-crockbase-gold": "Gold crock base",
   "pewter:block-jug-gold": "Gold jug",
@@ -10,7 +10,7 @@
   
   "pewter:block-candlelamp-silver-*": "Silver candle lamp",
   "pewter:block-candlelabra-silver-*": "Silver candelabra",
-  "pewter:block-crock-silver-*": "Silver crock",
+  "pewter:block-crock-silver": "Silver crock",
   "pewter:block-crocklid-silver": "Silver crock lid",
   "pewter:block-crockbase-silver": "Silver crock base",
   "pewter:block-jug-silver": "Silver jug",

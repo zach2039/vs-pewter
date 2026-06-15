@@ -20,7 +20,7 @@
 	  "shapeless": true,
 	  "output": {
 		"type": "block",
-		"code": "pewter:crock-electrum-east"
+		"code": "pewter:crock-electrum"
 	  }
 	}
   }

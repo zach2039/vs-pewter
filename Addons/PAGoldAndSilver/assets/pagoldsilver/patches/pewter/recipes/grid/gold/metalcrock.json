@@ -20,7 +20,7 @@
 	  "shapeless": true,
 	  "output": {
 		"type": "block",
-		"code": "pewter:crock-gold-east"
+		"code": "pewter:crock-gold"
 	  }
 	}
   }

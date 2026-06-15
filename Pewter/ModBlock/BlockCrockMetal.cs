@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Vintagestory.API.Client;
@@ -14,97 +15,21 @@ namespace Pewter.ModBlock
 {
     public class BlockCrockMetal : BlockCrock, IContainedMeshSource
     {
-        private AssetLocation getMostCommonMealIngredient(ItemStack[] contents)
+        public override void OnLoaded(ICoreAPI api)
         {
-            Dictionary<AssetLocation, int> dictionary = new Dictionary<AssetLocation, int>();
-            foreach (ItemStack itemStack in contents)
+            base.OnLoaded(api);
+
+            // Override default shape location used in crock, instead of copying/overriding methods like we used to do for metal crocks
+            Type typeBlockCrock = typeof(BlockCrock); 
+            FieldInfo fieldInfoshapeLocation = typeBlockCrock.GetField("shapeLocation", BindingFlags.Instance | BindingFlags.NonPublic);
+            if (fieldInfoshapeLocation != null)
             {
-                dictionary.TryGetValue(itemStack.Collectible.Code, out var value);
-                dictionary[itemStack.Collectible.Code] = 1 + value;
+                fieldInfoshapeLocation.SetValue(this, "pewter:shapes/block/metal/crock/");
             }
-
-            AssetLocation key = dictionary.Aggregate((KeyValuePair<AssetLocation, int> l, KeyValuePair<AssetLocation, int> r) => (l.Value <= r.Value) ? r : l).Key;
-            if (dictionary[key] < 3)
+            else
             {
-                return null;
+                throw new ArgumentNullException("Could not override shapeLocation for Pewter's BlockCrockMetal!");
             }
-
-            return key;
-        }
-
-        public new AssetLocation LabelForContents(string recipeCode, ItemStack[] contents)
-        {
-            string text;
-            if (recipeCode != null && recipeCode.Length > 0)
-            {
-                AssetLocation mostCommonMealIngredient = getMostCommonMealIngredient(contents);
-                if (mostCommonMealIngredient != null && (text = CodeToLabel(mostCommonMealIngredient)) != null)
-                {
-                    return AssetLocation.Create("shapes/block/metal/crock/label-" + text + ".json", Code.Domain);
-                }
-
-                return AssetLocation.Create("shapes/block/metal/crock/label-meal.json", Code.Domain);
-            }
-
-            if (contents == null || contents.Length == 0 || contents[0] == null)
-            {
-                return AssetLocation.Create("shapes/block/metal/crock/label-empty.json", Code.Domain);
-            }
-
-            if (MealMeshCache.ContentsRotten(contents))
-            {
-                return AssetLocation.Create("shapes/block/metal/crock/label-rot.json", Code.Domain);
-            }
-
-            text = CodeToLabel(contents[0].Collectible.Code) ?? "empty";
-            return AssetLocation.Create("shapes/block/metal/crock/label-" + text + ".json", Code.Domain);
-        }
-
-        public override void OnBeforeRender(ICoreClientAPI capi, ItemStack itemstack, EnumItemRenderTarget target, ref ItemRenderInfo renderinfo)
-        {
-            ItemStack[] nonEmptyContents = GetNonEmptyContents(capi.World, itemstack);
-            string @string = itemstack.Attributes.GetString("recipeCode");
-            AssetLocation assetLocation = LabelForContents(@string, nonEmptyContents);
-            if (!(assetLocation == null))
-            {
-                Dictionary<string, MultiTextureMeshRef> orCreate = ObjectCacheUtil.GetOrCreate(capi, "blockcrockGuiMeshRefs", () => new Dictionary<string, MultiTextureMeshRef>());
-                string key = Code.ToShortString() + assetLocation.ToShortString();
-                if (!orCreate.TryGetValue(key, out var value))
-                {
-                    MeshData data = GenMesh(capi, assetLocation, new Vec3f(0f, 270f, 0f));
-                    value = (orCreate[key] = capi.Render.UploadMultiTextureMesh(data));
-                }
-
-                renderinfo.ModelRef = value;
-            }
-        }
-
-        public override string GetMeshCacheKey(ItemSlot slot)
-        {
-            ItemStack itemstack = slot.Itemstack;
-            ItemStack[] nonEmptyContents = GetNonEmptyContents(api.World, itemstack);
-            string @string = itemstack.Attributes.GetString("recipeCode");
-            AssetLocation assetLocation = LabelForContents(@string, nonEmptyContents);
-            return Code.ToShortString() + assetLocation.ToShortString();
-        }
-
-        public new MeshData GenMesh(ItemSlot slot, ITextureAtlasAPI targetAtlas, BlockPos forBlockPos = null)
-        {
-            ItemStack itemstack = slot.Itemstack;
-            ItemStack[] nonEmptyContents = GetNonEmptyContents(api.World, itemstack);
-            string @string = itemstack.Attributes.GetString("recipeCode");
-            return GenMesh(api as ICoreClientAPI, LabelForContents(@string, nonEmptyContents));
-        }
-
-        public new MeshData GenMesh(ICoreClientAPI capi, AssetLocation labelLoc, Vec3f rot = null)
-        {
-            ITesselatorAPI tesselator = capi.Tesselator;
-            Shape shape = Vintagestory.API.Common.Shape.TryGet(capi, AssetLocation.Create("shapes/block/metal/crock/base.json", Code.Domain));
-            Shape shape2 = Vintagestory.API.Common.Shape.TryGet(capi, labelLoc);
-            tesselator.TesselateShape(this, shape, out var modeldata, rot);
-            tesselator.TesselateShape(this, shape2, out var modeldata2, rot);
-            modeldata.AddMeshData(modeldata2);
-            return modeldata;
         }
     }
 }
